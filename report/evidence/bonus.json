@@ -1,0 +1,696 @@
+{
+  "mode": "bonus",
+  "kind": "live Neo4j diagnostic with manually supplied source seeds",
+  "stats": {
+    "nodes": 384,
+    "relationships": 720
+  },
+  "contexts": {
+    "Q3": {
+      "question": "Lê Minh Thành bị tuyên bao nhiêu tháng tù, về tội gì, và tội đó được quy định tại điều nào của Bộ luật Hình sự với khung hình phạt cơ bản bao nhiêu?",
+      "doc_ids": [
+        "news-100260918080821054"
+      ],
+      "facts": [
+        "[news-100260918080821054] Vụ việc 'Vụ mua bán trái phép chất ma túy tại Hà Nội': Ba thanh niên góp tiền cho Lê Minh Thành mua ma túy dùng trong tiệc sinh nhật nhưng sau đó kháng cáo kêu oan, cho rằng đã rút lui. Tòa sơ thẩm tuyên phạt các bị cáo về tội mua bán trái phép chất ma túy.",
+        "[news-100260918080821054] Lê Minh Thành: vai trò bị cáo; giai đoạn sơ thẩm; tội/hành vi mua bán trái phép chất ma túy; mức án 36 tháng tù (giai đoạn bản án: sơ thẩm). Bằng chứng: Theo bản án sơ thẩm của Tòa án nhân dân khu vực 5 (Hà Nội), Lê Minh Thành, 31 tuổi, bị tuyên phạt 36 tháng tù về tội mua bán trái phép chất ma túy.",
+        "[news-100260918080821054] Ketamine: một chỉ; bằng chứng: Người bán báo giá 5 viên ma túy \"kẹo\" 7 triệu đồng và một chỉ ketamine 3 triệu đồng.",
+        "[news-100260918080821054] MDMA: 5 viên; bằng chứng: Cơ quan công an thu giữ một hộp vuông màu xanh chứa 5 viên nén màu trắng. Kết luận giám định xác định số viên nén này là ma túy MDMA.",
+        "[Điều 251 BLHS - Tội mua bán trái phép chất ma túy] khoản 1: 1. Người nào mua bán trái phép chất ma túy, thì bị phạt tù từ 02 năm đến 07 năm."
+      ]
+    },
+    "Q4": {
+      "question": "Giang hồ 'Hoàng Nato' bị bắt về hành vi gì, và hành vi đó có thể bị phạt tù tối đa bao nhiêu theo Bộ luật Hình sự?",
+      "doc_ids": [
+        "news-100260920221957595"
+      ],
+      "facts": [
+        "[news-100260920221957595] Vụ việc 'Vụ chuyên án 8 đường dây ma túy do Công an TP.HCM triệt phá': Công an TP.HCM triệt phá 8 đường dây tội phạm ma túy, bắt giữ và xử lý tổng cộng 126 người liên quan đến các hành vi mua bán, tàng trữ, tổ chức sử dụng và sử dụng trái phép chất ma túy.",
+        "[news-100260922111804786] Vụ việc 'Vụ tổ chức sử dụng trái phép chất ma túy liên quan đến TikToker Phannhibeauty và Hoàng Nato tại TP.HCM': Công an TP.HCM triệt phá chuyên án ma túy, bắt giữ 126 người liên quan trong đó có TikToker Phannhibeauty và giang hồ Hoàng Nato.",
+        "[news-100260924095400982] Vụ việc 'Vụ tổ chức sử dụng ma túy liên quan đến 'Hoàng Nato' và TikToker Phannhibeauty tại TP.HCM': Dương Minh Tuấn (Hoàng Nato) và bạn gái Phan Kim Nhi (TikToker Phannhibeauty) bị bắt do liên quan đến việc tổ chức sử dụng ma túy etomidate ngụy trang trong thuốc lá điện tử.",
+        "[news-100260925144412498] Vụ việc 'Vụ triệt phá 8 đường dây ma túy liên quan đến 'Hoàng Nato' tại TP.HCM': Công an TP.HCM triệt phá 8 đường dây ma túy, bắt giữ 126 người liên quan sau khi bắt Dương Minh Tuấn tức Hoàng Nato và bạn gái Phan Kim Nhi sử dụng ma túy etomidate.",
+        "[news-100260920221957595] Dương Minh Tuấn: vai trò bị can; giai đoạn điều tra; tội/hành vi tổ chức sử dụng trái phép chất ma túy; mức án chưa có thông tin (giai đoạn bản án: không rõ). Bằng chứng: bắt Dương Minh Tuấn (43 tuổi, tức \"Hoàng Nato\", ngụ phường Gia Định) để điều tra về hành vi \"tổ chức sử dụng trái phép chất ma túy\".",
+        "[news-100260922111804786] Dương Minh Tuấn: vai trò bị can; giai đoạn điều tra; tội/hành vi tổ chức sử dụng trái phép chất ma túy; mức án chưa có thông tin (giai đoạn bản án: không rõ). Bằng chứng: Như Tuổi Trẻ đã thông tin, sau thời gian tập trung lực lượng, triển khai các biện pháp công tác, PC04 tổ chức khám phá chuyên án, bắt \"Hoàng Nato\" để điều tra về hành vi \"tổ chức sử dụng trái phép chất ma túy\".",
+        "[news-100260924095400982] Dương Minh Tuấn: vai trò bị can; giai đoạn điều tra; tội/hành vi tổ chức sử dụng trái phép chất ma túy; mức án chưa có thông tin (giai đoạn bản án: không rõ). Bằng chứng: Bị bắt trong chuyên án, Dương Minh Tuấn (43 tuổi, tức \"Hoàng Nato\", ngụ phường Gia Định) và Phan Kim Nhi (37 tuổi, TikToker Phannhibeauty) thừa nhận với cơ quan điều tra việc cùng nhau tổ chức sử dụng ma túy loại etomidate.",
+        "[news-100260925144412498] Dương Minh Tuấn: vai trò bị can; giai đoạn điều tra; tội/hành vi tổ chức sử dụng trái phép chất ma túy; mức án chưa có thông tin (giai đoạn bản án: không rõ). Bằng chứng: Ban chuyên án tiến hành bắt Dương Minh Tuấn (43 tuổi, tức \"Hoàng Nato\", ngụ phường Gia Định) - một giang hồ cộm cán và bạn gái là Phan Kim Nhi (37 tuổi, TikToker Phannhibeauty) khi cả 2 cùng sử dụng ma túy loại etomidate ngụy trang trong thuốc lá điện tử (pod chill).",
+        "[news-100260920221957595] Methamphetamine: khoảng 100g; bằng chứng: Tang vật thu giữ gồm hơn 1.000 đầu pod chill chứa ma túy etomidate, khoảng 100g ma túy tổng hợp các loại cùng nhiều đồ vật, tài liệu liên quan.",
+        "[news-100260920221957595] Etomidate: hơn 1.000 đầu pod chill; bằng chứng: Tang vật thu giữ gồm hơn 1.000 đầu pod chill chứa ma túy etomidate, khoảng 100g ma túy tổng hợp các loại cùng nhiều đồ vật, tài liệu liên quan.",
+        "[news-100260922111804786] Methamphetamine: khoảng 100g; bằng chứng: Tang vật thu giữ gồm hơn 1.000 đầu pod chill chứa ma túy etomidate, khoảng 100g ma túy tổng hợp các loại cùng nhiều đồ vật, tài liệu liên quan.",
+        "[news-100260922111804786] Etomidate: hơn 1.000 đầu pod chill; bằng chứng: Tang vật thu giữ gồm hơn 1.000 đầu pod chill chứa ma túy etomidate, khoảng 100g ma túy tổng hợp các loại cùng nhiều đồ vật, tài liệu liên quan.",
+        "[news-100260924095400982] Etomidate: hơn 1.000 đầu pod chill chứa ma túy etomidate; bằng chứng: Công an Thành phố đã thu giữ hơn 1.000 đầu pod chill chứa ma túy etomidate cùng số lượng lớn ma túy tổng hợp các loại và nhiều đồ vật, tài liệu có liên quan.",
+        "[news-100260925144412498] Etomidate: hơn 1.000 đầu pod chill; bằng chứng: Tang vật thu giữ trong chuyên án là hơn 1.000 đầu pod chill chứa etomidate cùng lượng lớn ma túy tổng hợp.",
+        "[Điều 255 BLHS - Tội tổ chức sử dụng trái phép chất ma túy] khoản 1: 1. Người nào tổ chức sử dụng trái phép chất ma túy dưới bất kỳ hình thức nào, thì bị phạt tù từ 02 năm đến 07 năm.",
+        "[Điều 255 BLHS - Tội tổ chức sử dụng trái phép chất ma túy] khoản 2: 2. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 07 năm đến 15 năm:\n\na) Phạm tội 02 lần trở lên;\n\nb) Đối với 02 người trở lên;\n\nc) Đối với người từ đủ 13 tuổi đến dưới 18 tuổi;\n\nd) Đối với phụ nữ mà biết là có thai;\n\nđ) Đối với người đang cai nghiện;\n\ne) Gây tổn hại cho sức khỏe của người khác mà tỷ lệ tổn thương cơ thể từ 31% đến 60%;\n\ng) Gây bệnh nguy hiểm cho người khác;\n\nh) Tái phạm nguy hiểm.",
+        "[Điều 255 BLHS - Tội tổ chức sử dụng trái phép chất ma túy] khoản 3: 3. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 15 năm đến 20 năm:\n\na) Gây tổn hại cho sức khỏe của người khác mà tỷ lệ tổn thương cơ thể từ 61% trở lên hoặc gây chết người;\n\nb) Gây tổn hại cho sức khỏe của 02 người trở lên mà tỷ lệ tổn thương cơ thể của mỗi người từ 31% đến 60%;\n\nc) Gây bệnh nguy hiểm cho 02 người trở lên;\n\nd) Đối với người dưới 13 tuổi.",
+        "[Điều 255 BLHS - Tội tổ chức sử dụng trái phép chất ma túy] khoản 4: 4. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù 20 năm hoặc tù chung thân:\n\na) Gây tổn hại cho sức khỏe của 02 người trở lên mà tỷ lệ tổn thương cơ thể của mỗi người 61% trở lên;\n\nb) Làm chết 02 người trở lên.",
+        "[Điều 255 BLHS - Tội tổ chức sử dụng trái phép chất ma túy] khoản 5: 5. Người phạm tội còn có thể bị phạt tiền từ 50.000.000 đồng đến 500.000.000 đồng, phạt quản chế, cấm cư trú từ 01 năm đến 05 năm hoặc tịch thu một phần hoặc toàn bộ tài sản."
+      ]
+    },
+    "Q5": {
+      "question": "Cái Quang Huy bị truy tố về tội gì với loại ma túy nào? Với khối lượng MDMA trong vụ này, khoản nào của điều luật tương ứng được áp dụng và khung hình phạt là gì?",
+      "doc_ids": [
+        "news-100260917203001265"
+      ],
+      "facts": [
+        "[news-100260917203001265] Vụ việc 'Vụ vận chuyển ma túy từ Đức về Việt Nam qua sân bay Nội Bài': Cái Quang Huy bị cáo buộc hai lần vận chuyển trái phép chất ma túy từ Đức về Việt Nam qua sân bay Nội Bài, lôi kéo Nguyễn Tiến Đạt tham gia nhận hàng.",
+        "[news-100260918080821054] Vụ việc 'Vụ vận chuyển ma túy qua sân bay Nội Bài': Cái Quang Huy bị buộc tội hai lần vận chuyển ma túy về Việt Nam qua sân bay Nội Bài và đang bỏ trốn.",
+        "[news-100260917203001265] Cái Quang Huy: vai trò bị cáo; giai đoạn truy tố; tội/hành vi vận chuyển trái phép chất ma túy; mức án chưa có thông tin (giai đoạn bản án: không rõ). Bằng chứng: Tòa án nhân dân TP Hà Nội vừa ra quyết định mở phiên tòa xét xử Cái Quang Huy (26 tuổi) và Nguyễn Tiến Đạt (37 tuổi, cùng quê Nghệ An) về tội vận chuyển trái phép chất ma túy.",
+        "[news-100260918080821054] Cái Quang Huy: vai trò bị can; giai đoạn điều tra; tội/hành vi chưa xác định; mức án chưa có thông tin (giai đoạn bản án: không rõ). Bằng chứng: Từ mối quen biết khi cùng làm bếp tại một nhà hàng ở Berlin (Đức), Cái Quang Huy bị cáo buộc hai lần vận chuyển ma túy về Việt Nam qua sân bay Nội Bài.",
+        "[news-100260917203001265] Ketamine: khoảng 406g; bằng chứng: Tổng khối lượng ma túy Huy phải chịu trách nhiệm hình sự là hơn 9,6kg ma túy MDMA và khoảng 406g Ketamine.",
+        "[news-100260917203001265] MDMA: hơn 9,6kg; bằng chứng: Tổng khối lượng ma túy Huy phải chịu trách nhiệm hình sự là hơn 9,6kg ma túy MDMA và khoảng 406g Ketamine.",
+        "[news-100260918080821054] Ketamine: gần 406g; bằng chứng: Huy đang bỏ trốn vẫn phải chịu trách nhiệm hình sự tổng số ma túy gồm hơn 9,6kg MDMA và gần 406g Ketamine.",
+        "[news-100260918080821054] MDMA: hơn 9,6kg; bằng chứng: Huy đang bỏ trốn vẫn phải chịu trách nhiệm hình sự tổng số ma túy gồm hơn 9,6kg MDMA và gần 406g Ketamine.",
+        "[Điều 250 BLHS] Đối chiếu khối lượng hơn 9,6kg MDMA với ngưỡng điểm b khoản 4: từ 100 gam trở lên. Đây là đối chiếu ngưỡng, không khẳng định quyết định của tòa.",
+        "[Điều 250 BLHS - Tội vận chuyển trái phép chất ma túy] khoản 1: 1. Người nào vận chuyển trái phép chất ma túy mà không nhằm mục đích sản xuất, mua bán, tàng trữ trái phép chất ma túy thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 02 năm đến 07 năm:\n\na) Đã bị xử phạt vi phạm hành chính về hành vi quy định tại Điều này hoặc đã bị kết án về tội này hoặc một trong các tội quy định tại các điều 248, 249, 251 và 252 của Bộ luật này, chưa được xóa án tích mà còn vi phạm;\n\nb) Nhựa thuốc phiện, nhựa cần sa hoặc cao côca có khối lượng từ 01 gam đến dưới 500 gam;\n\nc) Heroine, Cocaine, Methamphetamine, Amphetamine, MDMA hoặc XLR-11 có khối lượng từ 0,1 gam đến dưới 05 gam;\n\nd) Lá cây côca; lá khát (lá cây Catha edulis); lá, rễ, thân, cành, hoa, quả của cây cần sa hoặc bộ phận của cây khác có chứa chất ma túy do Chính phủ quy định có khối lượng từ 01 kilôgam đến dưới 10 kilôgam;\n\nđ) Quả thuốc phiện khô có khối lượng từ 05 kilôgam đến dưới 50 kilôgam;\n\ne) Quả thuốc phiện tươi có khối lượng từ 01 kilôgam đến dưới 10 kilôgam;\n\ng) Các chất ma túy khác ở thể rắn có khối lượng từ 01 gam đến dưới 20 gam;\n\nh) Các chất ma túy khác ở thể lỏng có thể tích từ 10 mililít đến dưới 100 mililít;\n\ni) Có 02 chất ma túy trở lên mà tổng khối lượng hoặc thể tích của các chất đó tương đương với khối lượng hoặc thể tích chất ma túy quy định tại một trong các điểm từ điểm b đến điểm h khoản này.",
+        "[Điều 250 BLHS - Tội vận chuyển trái phép chất ma túy] khoản 4: 4. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù 20 năm, tù chung thân hoặc tử hình:\n\na) Nhựa thuốc phiện, nhựa cần sa hoặc cao côca có khối lượng 05 kilôgam trở lên;\n\nb) Heroine, Cocaine, Methamphetamine, Amphetamine, MDMA hoặc XLR-11 có khối lượng 100 gam trở lên;\n\nc) Lá cây côca; lá khát (lá cây Catha edulis); lá, rễ, thân, cành, hoa, quả của cây cần sa hoặc bộ phận của cây khác có chứa chất ma túy do Chính phủ quy định có khối lượng 75 kilôgam trở lên;\n\nd) Quả thuốc phiện khô có khối lượng 600 kilôgam trở lên;\n\nđ) Quả thuốc phiện tươi có khối lượng 150 kilôgam trở lên;\n\ne) Các chất ma túy khác ở thể rắn có khối lượng 300 gam trở lên;\n\ng) Các chất ma túy khác ở thể lỏng có thể tích 750 mililít trở lên;\n\nh) Có 02 chất ma túy trở lên mà tổng khối lượng hoặc thể tích của các chất đó tương đương với khối lượng hoặc thể tích chất ma túy quy định tại một trong các điểm từ điểm a đến điểm g khoản này."
+      ]
+    }
+  },
+  "queries": {
+    "labels": {
+      "cypher": "MATCH (n) RETURN labels(n)[0] AS label, count(*) AS n ORDER BY label",
+      "rows": [
+        {
+          "label": "Article",
+          "n": 18
+        },
+        {
+          "label": "Case",
+          "n": 14
+        },
+        {
+          "label": "Clause",
+          "n": 99
+        },
+        {
+          "label": "Crime",
+          "n": 13
+        },
+        {
+          "label": "Location",
+          "n": 5
+        },
+        {
+          "label": "Participation",
+          "n": 52
+        },
+        {
+          "label": "Person",
+          "n": 43
+        },
+        {
+          "label": "Quantity",
+          "n": 21
+        },
+        {
+          "label": "Substance",
+          "n": 11
+        },
+        {
+          "label": "Threshold",
+          "n": 108
+        }
+      ]
+    },
+    "relationships": {
+      "cypher": "MATCH ()-[r]->() RETURN type(r) AS rel, count(*) AS n ORDER BY rel",
+      "rows": [
+        {
+          "rel": "ACCUSED_OF",
+          "n": 27
+        },
+        {
+          "rel": "CHARGED_WITH",
+          "n": 15
+        },
+        {
+          "rel": "DEFINES",
+          "n": 13
+        },
+        {
+          "rel": "HAS_CLAUSE",
+          "n": 99
+        },
+        {
+          "rel": "HAS_PARTICIPATION",
+          "n": 52
+        },
+        {
+          "rel": "HAS_QUANTITY",
+          "n": 21
+        },
+        {
+          "rel": "HAS_THRESHOLD",
+          "n": 108
+        },
+        {
+          "rel": "INVOLVES",
+          "n": 21
+        },
+        {
+          "rel": "IN_CASE",
+          "n": 52
+        },
+        {
+          "rel": "LOCATED_IN",
+          "n": 14
+        },
+        {
+          "rel": "MENTIONS",
+          "n": 169
+        },
+        {
+          "rel": "OF_SUBSTANCE",
+          "n": 129
+        }
+      ]
+    },
+    "mdma_cases": {
+      "cypher": "MATCH (k:Case)-[:INVOLVES]->(:Substance {name:'MDMA'}) RETURN k.name AS name, k.doc_id AS doc_id ORDER BY doc_id",
+      "rows": [
+        {
+          "name": "Vụ vận chuyển ma túy từ Đức về Việt Nam qua sân bay Nội Bài",
+          "doc_id": "news-100260917203001265"
+        },
+        {
+          "name": "Vụ vận chuyển ma túy qua sân bay Nội Bài",
+          "doc_id": "news-100260918080821054"
+        },
+        {
+          "name": "Vụ mua bán trái phép chất ma túy tại Hà Nội",
+          "doc_id": "news-100260918080821054"
+        },
+        {
+          "name": "Vụ sai phạm tại Viện Pháp y tâm thần Trung ương",
+          "doc_id": "news-100260924105118645"
+        },
+        {
+          "name": "Vụ tàng trữ và tổ chức sử dụng trái phép chất ma túy tại Viện Pháp y tâm thần Trung ương và bãi biển Sầm Sơn",
+          "doc_id": "news-100260930085028036"
+        }
+      ]
+    },
+    "mdma_250_thresholds": {
+      "cypher": "MATCH (:Article {id:'Điều 250 BLHS'})-[:HAS_CLAUSE]->(cl:Clause)-[:HAS_THRESHOLD]->(t:Threshold)-[:OF_SUBSTANCE]->(:Substance {name:'MDMA'}) RETURN cl.number AS clause, t.min_g AS min_g, t.max_g AS max_g, cl.penalty AS penalty ORDER BY clause",
+      "rows": [
+        {
+          "clause": 1,
+          "min_g": 0.1,
+          "max_g": 5.0,
+          "penalty": "phạt tù từ 02 năm đến 07 năm"
+        },
+        {
+          "clause": 2,
+          "min_g": 5.0,
+          "max_g": 30.0,
+          "penalty": "phạt tù từ 07 năm đến 15 năm"
+        },
+        {
+          "clause": 3,
+          "min_g": 30.0,
+          "max_g": 100.0,
+          "penalty": "phạt tù từ 15 năm đến 20 năm"
+        },
+        {
+          "clause": 4,
+          "min_g": 100.0,
+          "max_g": null,
+          "penalty": "phạt tù 20 năm, tù chung thân hoặc tử hình"
+        }
+      ]
+    },
+    "person_assertions": {
+      "cypher": "MATCH (p:Person)-[:HAS_PARTICIPATION]->(v:Participation) RETURN p.name AS name, v.charge AS charge, v.stage AS stage, v.sentence AS sentence, v.sentence_stage AS sentence_stage, v.doc_id AS doc_id, v.evidence AS evidence ORDER BY name, doc_id",
+      "rows": [
+        {
+          "name": "Bùi Thị Thanh Thủy",
+          "charge": "",
+          "stage": "điều tra",
+          "sentence": "",
+          "sentence_stage": "không rõ",
+          "doc_id": "news-100260924105118645",
+          "evidence": "Một trong những trường hợp cho thấy cách những người phạm tội tìm đường vào cơ sở chữa bệnh bắt buộc là Bùi Thị Thanh Thủy, người có ba tiền án và nhiều lần vướng vào các vụ án ma túy."
+        },
+        {
+          "name": "Cao Thị Bích Hằng",
+          "charge": "",
+          "stage": "sơ thẩm",
+          "sentence": "",
+          "sentence_stage": "không rõ",
+          "doc_id": "news-100260930085028036",
+          "evidence": "Tối hôm ấy, Đông gọi Trần Quốc An, 42 tuổi, điều dưỡng khoa điều trị bắt buộc nam Viện Pháp y tâm thần Trung ương, cùng vợ là Cao Thị Bích Hằng ra bãi biển ăn uống, nghe nhạc."
+        },
+        {
+          "name": "Cái Quang Huy",
+          "charge": "vận chuyển trái phép chất ma túy",
+          "stage": "truy tố",
+          "sentence": "",
+          "sentence_stage": "không rõ",
+          "doc_id": "news-100260917203001265",
+          "evidence": "Tòa án nhân dân TP Hà Nội vừa ra quyết định mở phiên tòa xét xử Cái Quang Huy (26 tuổi) và Nguyễn Tiến Đạt (37 tuổi, cùng quê Nghệ An) về tội vận chuyển trái phép chất ma túy."
+        },
+        {
+          "name": "Cái Quang Huy",
+          "charge": "",
+          "stage": "điều tra",
+          "sentence": "",
+          "sentence_stage": "không rõ",
+          "doc_id": "news-100260918080821054",
+          "evidence": "Từ mối quen biết khi cùng làm bếp tại một nhà hàng ở Berlin (Đức), Cái Quang Huy bị cáo buộc hai lần vận chuyển ma túy về Việt Nam qua sân bay Nội Bài."
+        },
+        {
+          "name": "Dương Minh Tuấn",
+          "charge": "tổ chức sử dụng trái phép chất ma túy",
+          "stage": "điều tra",
+          "sentence": "",
+          "sentence_stage": "không rõ",
+          "doc_id": "news-100260920221957595",
+          "evidence": "bắt Dương Minh Tuấn (43 tuổi, tức \"Hoàng Nato\", ngụ phường Gia Định) để điều tra về hành vi \"tổ chức sử dụng trái phép chất ma túy\"."
+        },
+        {
+          "name": "Dương Minh Tuấn",
+          "charge": "tổ chức sử dụng trái phép chất ma túy",
+          "stage": "điều tra",
+          "sentence": "",
+          "sentence_stage": "không rõ",
+          "doc_id": "news-100260922111804786",
+          "evidence": "Như Tuổi Trẻ đã thông tin, sau thời gian tập trung lực lượng, triển khai các biện pháp công tác, PC04 tổ chức khám phá chuyên án, bắt \"Hoàng Nato\" để điều tra về hành vi \"tổ chức sử dụng trái phép chất ma túy\"."
+        },
+        {
+          "name": "Dương Minh Tuấn",
+          "charge": "tổ chức sử dụng trái phép chất ma túy",
+          "stage": "điều tra",
+          "sentence": "",
+          "sentence_stage": "không rõ",
+          "doc_id": "news-100260924095400982",
+          "evidence": "Bị bắt trong chuyên án, Dương Minh Tuấn (43 tuổi, tức \"Hoàng Nato\", ngụ phường Gia Định) và Phan Kim Nhi (37 tuổi, TikToker Phannhibeauty) thừa nhận với cơ quan điều tra việc cùng nhau tổ chức sử dụng ma túy loại etomidate."
+        },
+        {
+          "name": "Dương Minh Tuấn",
+          "charge": "tổ chức sử dụng trái phép chất ma túy",
+          "stage": "điều tra",
+          "sentence": "",
+          "sentence_stage": "không rõ",
+          "doc_id": "news-100260925144412498",
+          "evidence": "Ban chuyên án tiến hành bắt Dương Minh Tuấn (43 tuổi, tức \"Hoàng Nato\", ngụ phường Gia Định) - một giang hồ cộm cán và bạn gái là Phan Kim Nhi (37 tuổi, TikToker Phannhibeauty) khi cả 2 cùng sử dụng ma túy loại etomidate ngụy trang trong thuốc lá điện tử (pod chill)."
+        },
+        {
+          "name": "Dương Văn Biết",
+          "charge": "",
+          "stage": "điều tra",
+          "sentence": "",
+          "sentence_stage": "không rõ",
+          "doc_id": "news-100260924105118645",
+          "evidence": "Cơ quan điều tra cáo buộc Thưởng đưa tổng cộng 250 triệu đồng cho ông Trần Văn Trường, khi đó là viện trưởng; ông Dương Văn Lương, Phó viện trưởng và ông Dương Văn Biết, Trưởng khoa giám định."
+        },
+        {
+          "name": "Dương Văn Lương",
+          "charge": "",
+          "stage": "điều tra",
+          "sentence": "",
+          "sentence_stage": "không rõ",
+          "doc_id": "news-100260924105118645",
+          "evidence": "Cơ quan điều tra cáo buộc Thưởng đưa tổng cộng 250 triệu đồng cho ông Trần Văn Trường, khi đó là viện trưởng; ông Dương Văn Lương, Phó viện trưởng và ông Dương Văn Biết, Trưởng khoa giám định."
+        },
+        {
+          "name": "Giang Quốc Khánh",
+          "charge": "mua bán trái phép chất ma túy",
+          "stage": "điều tra",
+          "sentence": "",
+          "sentence_stage": "không rõ",
+          "doc_id": "news-100260920221957595",
+          "evidence": "Các đường dây mua bán trái phép chất ma túy được xác định do Kim Yu Young (34 tuổi, quốc tịch Hàn Quốc), Phạm Phương Anh (27 tuổi), Phạm Tài Vình (24 tuổi), Lê Đăng Khoa (32 tuổi), Giang Quốc Khánh (26 tuổi), Phạm Minh Sang (34 tuổi) và Nguyễn Thành Quốc (30 tuổi) cầm đầu"
+        },
+        {
+          "name": "Kim Xuân Tuấn",
+          "charge": "mua bán trái phép chất ma túy",
+          "stage": "phúc thẩm",
+          "sentence": "24 tháng tù",
+          "sentence_stage": "sơ thẩm",
+          "doc_id": "news-100260918080821054",
+          "evidence": "Cùng tội danh, Trịnh Vũ Kiên, Kim Xuân Tuấn và Nguyễn Quang Hưng (cùng 30 tuổi) mỗi người bị tuyên phạt 24 tháng tù. Tòa sơ thẩm xác định ba bị cáo này là đồng phạm giúp sức cho Thành."
+        },
+        {
+          "name": "Kim Yu Young",
+          "charge": "mua bán trái phép chất ma túy",
+          "stage": "điều tra",
+          "sentence": "",
+          "sentence_stage": "không rõ",
+          "doc_id": "news-100260920221957595",
+          "evidence": "Các đường dây mua bán trái phép chất ma túy được xác định do Kim Yu Young (34 tuổi, quốc tịch Hàn Quốc), Phạm Phương Anh (27 tuổi), Phạm Tài Vình (24 tuổi), Lê Đăng Khoa (32 tuổi), Giang Quốc Khánh (26 tuổi), Phạm Minh Sang (34 tuổi) và Nguyễn Thành Quốc (30 tuổi) cầm đầu"
+        },
+        {
+          "name": "Lê Minh Thành",
+          "charge": "mua bán trái phép chất ma túy",
+          "stage": "sơ thẩm",
+          "sentence": "36 tháng tù",
+          "sentence_stage": "sơ thẩm",
+          "doc_id": "news-100260918080821054",
+          "evidence": "Theo bản án sơ thẩm của Tòa án nhân dân khu vực 5 (Hà Nội), Lê Minh Thành, 31 tuổi, bị tuyên phạt 36 tháng tù về tội mua bán trái phép chất ma túy."
+        },
+        {
+          "name": "Lê Văn Thưởng",
+          "charge": "",
+          "stage": "điều tra",
+          "sentence": "",
+          "sentence_stage": "không rõ",
+          "doc_id": "news-100260924105118645",
+          "evidence": "Theo kết luận điều tra, để có kết quả này, điều tra viên Lê Văn Thưởng đã gặp lãnh đạo Viện Pháp y tâm thần Trung ương nhờ giúp đỡ."
+        },
+        {
+          "name": "Lê Văn Đông",
+          "charge": "",
+          "stage": "truy tố",
+          "sentence": "",
+          "sentence_stage": "không rõ",
+          "doc_id": "news-100260924105118645",
+          "evidence": "Vợ chồng bị can Nguyễn Thị Mai Anh và Lê Văn Đông tại cơ quan điều tra - Ảnh: CACC"
+        },
+        {
+          "name": "Lê Văn Đông",
+          "charge": "",
+          "stage": "sơ thẩm",
+          "sentence": "",
+          "sentence_stage": "không rõ",
+          "doc_id": "news-100260930085028036",
+          "evidence": "Bị cáo Lê Văn Đông tại phiên tòa xét xử các bị cáo trong vụ \"chạy\" bệnh án Viện Pháp y tâm thần Trung ương - Ảnh: GIANG LONG"
+        },
+        {
+          "name": "Lê Đăng Khoa",
+          "charge": "mua bán trái phép chất ma túy",
+          "stage": "điều tra",
+          "sentence": "",
+          "sentence_stage": "không rõ",
+          "doc_id": "news-100260920221957595",
+          "evidence": "Các đường dây mua bán trái phép chất ma túy được xác định do Kim Yu Young (34 tuổi, quốc tịch Hàn Quốc), Phạm Phương Anh (27 tuổi), Phạm Tài Vình (24 tuổi), Lê Đăng Khoa (32 tuổi), Giang Quốc Khánh (26 tuổi), Phạm Minh Sang (34 tuổi) và Nguyễn Thành Quốc (30 tuổi) cầm đầu"
+        },
+        {
+          "name": "Mai Anh",
+          "charge": "",
+          "stage": "sơ thẩm",
+          "sentence": "",
+          "sentence_stage": "không rõ",
+          "doc_id": "news-100260930085028036",
+          "evidence": "Đông có 13 tiền án tiền sự và sinh sống như vợ chồng với \"bà trùm\" Mai Anh."
+        },
+        {
+          "name": "Nguyễn Hoàng Khả Ái",
+          "charge": "",
+          "stage": "không rõ",
+          "sentence": "",
+          "sentence_stage": "không rõ",
+          "doc_id": "news-100260920221957595",
+          "evidence": "Nghi phạm Kim Yu Young và bạn gái Nguyễn Hoàng Khả Ái - Ảnh: Công an TP.HCM"
+        },
+        {
+          "name": "Nguyễn Hữu Đức",
+          "charge": "",
+          "stage": "điều tra",
+          "sentence": "",
+          "sentence_stage": "không rõ",
+          "doc_id": "news-100260917203001265",
+          "evidence": "Do không đủ căn cứ chứng minh Đức đồng phạm với Huy về hành vi vận chuyển trái phép chất ma túy, ngày 13-4-2026, Viện Kiểm sát nhân dân TP Hà Nội đã hủy quyết định khởi tố bị can đối với Đức."
+        },
+        {
+          "name": "Nguyễn Minh Nhân",
+          "charge": "",
+          "stage": "điều tra",
+          "sentence": "",
+          "sentence_stage": "không rõ",
+          "doc_id": "news-100260926112415229",
+          "evidence": "Sáng 26-9, Công an tỉnh An Giang cho biết vừa ra quyết định khởi tố vụ án, khởi tố bị can và lệnh tạm giam Nguyễn Minh Nhân (21 tuổi, ở phường Rạch Giá, tỉnh An Giang) về hành vi chống người thi hành công vụ."
+        },
+        {
+          "name": "Nguyễn Minh Đức",
+          "charge": "tổ chức sử dụng trái phép chất ma túy",
+          "stage": "điều tra",
+          "sentence": "",
+          "sentence_stage": "không rõ",
+          "doc_id": "news-100260924101703641",
+          "evidence": "ngày 16-9, Phòng Cảnh sát điều tra tội phạm về ma túy đã chủ trì, phối hợp tổ chức bắt giữ Nguyễn Minh Đức (45 tuổi) về hành vi \"tổ chức sử dụng trái phép chất ma túy\"."
+        },
+        {
+          "name": "Nguyễn Quang Hưng",
+          "charge": "mua bán trái phép chất ma túy",
+          "stage": "phúc thẩm",
+          "sentence": "24 tháng tù",
+          "sentence_stage": "sơ thẩm",
+          "doc_id": "news-100260918080821054",
+          "evidence": "Cùng tội danh, Trịnh Vũ Kiên, Kim Xuân Tuấn và Nguyễn Quang Hưng (cùng 30 tuổi) mỗi người bị tuyên phạt 24 tháng tù. Tòa sơ thẩm xác định ba bị cáo này là đồng phạm giúp sức cho Thành."
+        },
+        {
+          "name": "Nguyễn Thành Quốc",
+          "charge": "mua bán trái phép chất ma túy",
+          "stage": "điều tra",
+          "sentence": "",
+          "sentence_stage": "không rõ",
+          "doc_id": "news-100260920221957595",
+          "evidence": "Các đường dây mua bán trái phép chất ma túy được xác định do Kim Yu Young (34 tuổi, quốc tịch Hàn Quốc), Phạm Phương Anh (27 tuổi), Phạm Tài Vình (24 tuổi), Lê Đăng Khoa (32 tuổi), Giang Quốc Khánh (26 tuổi), Phạm Minh Sang (34 tuổi) và Nguyễn Thành Quốc (30 tuổi) cầm đầu"
+        },
+        {
+          "name": "Nguyễn Thị Mai Anh",
+          "charge": "",
+          "stage": "truy tố",
+          "sentence": "",
+          "sentence_stage": "không rõ",
+          "doc_id": "news-100260924105118645",
+          "evidence": "Vợ chồng bị can Nguyễn Thị Mai Anh và Lê Văn Đông tại cơ quan điều tra - Ảnh: CACC"
+        },
+        {
+          "name": "Nguyễn Thị Mai Anh",
+          "charge": "",
+          "stage": "sơ thẩm",
+          "sentence": "",
+          "sentence_stage": "không rõ",
+          "doc_id": "news-100260930085028036",
+          "evidence": "Dù đều đang phải chữa bệnh bắt buộc, Đông và vợ là Nguyễn Thị Mai Anh đã bố trí gia đình, người giúp việc và những người thân cận đi Sầm Sơn cùng thời điểm."
+        },
+        {
+          "name": "Nguyễn Thị Thu Hoài",
+          "charge": "",
+          "stage": "điều tra",
+          "sentence": "",
+          "sentence_stage": "không rõ",
+          "doc_id": "news-100260924105118645",
+          "evidence": "Nguyễn Thị Thu Hoài, Phó trưởng Phòng Tổ chức cán bộ, bị cáo buộc nhận 3,46 tỉ đồng của 7 người, sau đó chuyển 3 tỉ đồng cho Viện trưởng Trần Văn Trường để tuyển dụng trái quy định."
+        },
+        {
+          "name": "Nguyễn Tiến Đạt",
+          "charge": "vận chuyển trái phép chất ma túy",
+          "stage": "điều tra",
+          "sentence": "",
+          "sentence_stage": "không rõ",
+          "doc_id": "news-100260917203001265",
+          "evidence": "Tòa án nhân dân TP Hà Nội vừa ra quyết định mở phiên tòa xét xử Cái Quang Huy (26 tuổi) và Nguyễn Tiến Đạt (37 tuổi, cùng quê Nghệ An) về tội vận chuyển trái phép chất ma túy."
+        },
+        {
+          "name": "Nguyễn Văn Quang",
+          "charge": "",
+          "stage": "truy tố",
+          "sentence": "",
+          "sentence_stage": "không rõ",
+          "doc_id": "news-100260924105118645",
+          "evidence": "Điều dưỡng Nguyễn Văn Quang bị truy tố cả tội nhận hối lộ và đánh bạc, do nhiều lần cá độ bóng đá quốc tế với số tiền giao dịch lên tới 10 triệu đồng mỗi trận."
+        },
+        {
+          "name": "Ngô Việt Dũng",
+          "charge": "",
+          "stage": "sơ thẩm",
+          "sentence": "",
+          "sentence_stage": "không rõ",
+          "doc_id": "news-100260930085028036",
+          "evidence": "Trả lời thẩm vấn tại tòa, Dũng cũng thừa nhận mình là người mang loa vào chuyến đi biển và sau đó có mặt khi nhóm của Đông sử dụng ma túy."
+        },
+        {
+          "name": "Ngô Văn Vinh",
+          "charge": "",
+          "stage": "truy tố",
+          "sentence": "",
+          "sentence_stage": "không rõ",
+          "doc_id": "news-100260924105118645",
+          "evidence": "Trong số những người hầu tòa có 39 bác sĩ, điều dưỡng, nhân viên y tế, cùng hai cựu viện trưởng Ngô Văn Vinh và Trần Văn Trường."
+        },
+        {
+          "name": "Phan Kim Nhi",
+          "charge": "tổ chức sử dụng trái phép chất ma túy",
+          "stage": "điều tra",
+          "sentence": "",
+          "sentence_stage": "không rõ",
+          "doc_id": "news-100260922111804786",
+          "evidence": "Theo công an, trong số 126 nghi phạm ban đầu bị bắt và xử lý có Phan Kim Nhi (37 tuổi, TikToker Phannhibeauty) bị bắt để điều tra về hành vi \"tổ chức sử dụng trái phép chất ma túy\"."
+        },
+        {
+          "name": "Phan Kim Nhi",
+          "charge": "tổ chức sử dụng trái phép chất ma túy",
+          "stage": "điều tra",
+          "sentence": "",
+          "sentence_stage": "không rõ",
+          "doc_id": "news-100260924095400982",
+          "evidence": "Bị bắt trong chuyên án, Dương Minh Tuấn (43 tuổi, tức \"Hoàng Nato\", ngụ phường Gia Định) và Phan Kim Nhi (37 tuổi, TikToker Phannhibeauty) thừa nhận với cơ quan điều tra việc cùng nhau tổ chức sử dụng ma túy loại etomidate."
+        },
+        {
+          "name": "Phan Kim Nhi",
+          "charge": "tổ chức sử dụng trái phép chất ma túy",
+          "stage": "điều tra",
+          "sentence": "",
+          "sentence_stage": "không rõ",
+          "doc_id": "news-100260925144412498",
+          "evidence": "Ban chuyên án tiến hành bắt Dương Minh Tuấn (43 tuổi, tức \"Hoàng Nato\", ngụ phường Gia Định) - một giang hồ cộm cán và bạn gái là Phan Kim Nhi (37 tuổi, TikToker Phannhibeauty) khi cả 2 cùng sử dụng ma túy loại etomidate ngụy trang trong thuốc lá điện tử (pod chill)."
+        },
+        {
+          "name": "Phương",
+          "charge": "",
+          "stage": "sơ thẩm",
+          "sentence": "",
+          "sentence_stage": "không rõ",
+          "doc_id": "news-100260930085028036",
+          "evidence": "Theo cáo trạng, sau khi những người khác lần lượt ra về, Đông ngồi tại bàn DJ chơi nhạc. Mai Anh và Hằng ngồi trên ghế tựa, còn An, Dũng, Phương và một người khác ngồi quanh bàn nhựa."
+        },
+        {
+          "name": "Phạm Minh Sang",
+          "charge": "mua bán trái phép chất ma túy",
+          "stage": "điều tra",
+          "sentence": "",
+          "sentence_stage": "không rõ",
+          "doc_id": "news-100260920221957595",
+          "evidence": "Các đường dây mua bán trái phép chất ma túy được xác định do Kim Yu Young (34 tuổi, quốc tịch Hàn Quốc), Phạm Phương Anh (27 tuổi), Phạm Tài Vình (24 tuổi), Lê Đăng Khoa (32 tuổi), Giang Quốc Khánh (26 tuổi), Phạm Minh Sang (34 tuổi) và Nguyễn Thành Quốc (30 tuổi) cầm đầu"
+        },
+        {
+          "name": "Phạm Phương Anh",
+          "charge": "mua bán trái phép chất ma túy",
+          "stage": "điều tra",
+          "sentence": "",
+          "sentence_stage": "không rõ",
+          "doc_id": "news-100260920221957595",
+          "evidence": "Các đường dây mua bán trái phép chất ma túy được xác định do Kim Yu Young (34 tuổi, quốc tịch Hàn Quốc), Phạm Phương Anh (27 tuổi), Phạm Tài Vình (24 tuổi), Lê Đăng Khoa (32 tuổi), Giang Quốc Khánh (26 tuổi), Phạm Minh Sang (34 tuổi) và Nguyễn Thành Quốc (30 tuổi) cầm đầu"
+        },
+        {
+          "name": "Phạm Tài Vình",
+          "charge": "mua bán trái phép chất ma túy",
+          "stage": "điều tra",
+          "sentence": "",
+          "sentence_stage": "không rõ",
+          "doc_id": "news-100260920221957595",
+          "evidence": "Các đường dây mua bán trái phép chất ma túy được xác định do Kim Yu Young (34 tuổi, quốc tịch Hàn Quốc), Phạm Phương Anh (27 tuổi), Phạm Tài Vình (24 tuổi), Lê Đăng Khoa (32 tuổi), Giang Quốc Khánh (26 tuổi), Phạm Minh Sang (34 tuổi) và Nguyễn Thành Quốc (30 tuổi) cầm đầu"
+        },
+        {
+          "name": "Thái Hoàng",
+          "charge": "",
+          "stage": "không rõ",
+          "sentence": "",
+          "sentence_stage": "không rõ",
+          "doc_id": "news-100260924105118645",
+          "evidence": "Với DJ Thái Hoàng, vợ người này chi 1,4 tỉ đồng nhờ Mai Anh lo cho chồng."
+        },
+        {
+          "name": "Trần Minh Tâm",
+          "charge": "mua bán trái phép chất ma túy",
+          "stage": "sơ thẩm",
+          "sentence": "tử hình",
+          "sentence_stage": "sơ thẩm",
+          "doc_id": "news-100260928173914514",
+          "evidence": "Hội đồng xét xử tuyên phạt Trần Thanh Tuấn (25 tuổi), Trần Minh Tâm (32 tuổi) tử hình về tội mua bán trái phép chất ma túy."
+        },
+        {
+          "name": "Trần Ngọc Nam",
+          "charge": "",
+          "stage": "không rõ",
+          "sentence": "",
+          "sentence_stage": "không rõ",
+          "doc_id": "news-100260926112415229",
+          "evidence": "Thiếu tá Trần Ngọc Nam - cán bộ thuộc Đội Cảnh sát giao thông số 1, Phòng Cảnh sát giao thông, Công an tỉnh An Giang."
+        },
+        {
+          "name": "Trần Ngọc Thảo",
+          "charge": "tổ chức sử dụng trái phép chất ma túy",
+          "stage": "sơ thẩm",
+          "sentence": "2 năm 6 tháng tù",
+          "sentence_stage": "sơ thẩm",
+          "doc_id": "news-100260928173914514",
+          "evidence": "Tòa cũng tuyên phạt Đinh Đức Tuấn (36 tuổi) và Trần Ngọc Thảo (26 tuổi) 2 năm 6 tháng tù về tội tổ chức sử dụng trái phép chất ma túy."
+        },
+        {
+          "name": "Trần Quốc An",
+          "charge": "",
+          "stage": "truy tố",
+          "sentence": "",
+          "sentence_stage": "không rõ",
+          "doc_id": "news-100260924105118645",
+          "evidence": "Điều dưỡng Trần Quốc An của Viện Pháp y tâm thần Trung ương cũng có mặt. Cáo trạng xác định An hút cần sa, uống “nước vui” do Đông cung cấp và còn cất giấu ma túy trong túi quần."
+        },
+        {
+          "name": "Trần Quốc An",
+          "charge": "",
+          "stage": "sơ thẩm",
+          "sentence": "",
+          "sentence_stage": "không rõ",
+          "doc_id": "news-100260930085028036",
+          "evidence": "Tối hôm ấy, Đông gọi Trần Quốc An, 42 tuổi, điều dưỡng khoa điều trị bắt buộc nam Viện Pháp y tâm thần Trung ương, cùng vợ là Cao Thị Bích Hằng ra bãi biển ăn uống, nghe nhạc."
+        },
+        {
+          "name": "Trần Thanh Tuấn",
+          "charge": "mua bán trái phép chất ma túy",
+          "stage": "sơ thẩm",
+          "sentence": "tử hình",
+          "sentence_stage": "sơ thẩm",
+          "doc_id": "news-100260928173914514",
+          "evidence": "Hội đồng xét xử tuyên phạt Trần Thanh Tuấn (25 tuổi), Trần Minh Tâm (32 tuổi) tử hình về tội mua bán trái phép chất ma túy."
+        },
+        {
+          "name": "Trần Văn Trường",
+          "charge": "",
+          "stage": "truy tố",
+          "sentence": "",
+          "sentence_stage": "không rõ",
+          "doc_id": "news-100260924105118645",
+          "evidence": "Trong số những người hầu tòa có 39 bác sĩ, điều dưỡng, nhân viên y tế, cùng hai cựu viện trưởng Ngô Văn Vinh và Trần Văn Trường."
+        },
+        {
+          "name": "Trịnh Vũ Kiên",
+          "charge": "mua bán trái phép chất ma túy",
+          "stage": "phúc thẩm",
+          "sentence": "24 tháng tù",
+          "sentence_stage": "sơ thẩm",
+          "doc_id": "news-100260918080821054",
+          "evidence": "Cùng tội danh, Trịnh Vũ Kiên, Kim Xuân Tuấn và Nguyễn Quang Hưng (cùng 30 tuổi) mỗi người bị tuyên phạt 24 tháng tù. Tòa sơ thẩm xác định ba bị cáo này là đồng phạm giúp sức cho Thành."
+        },
+        {
+          "name": "Võ Nữ Minh Thư",
+          "charge": "mua bán trái phép chất ma túy",
+          "stage": "sơ thẩm",
+          "sentence": "8 năm tù",
+          "sentence_stage": "sơ thẩm",
+          "doc_id": "news-100260928173914514",
+          "evidence": "Cùng tội danh trên, hội đồng xét xử tuyên phạt Đỗ Thị Ngọc Yến (26 tuổi) 8 năm 6 tháng tù, Võ Nữ Minh Thư (23 tuổi) 8 năm tù."
+        },
+        {
+          "name": "Đinh Đức Tuấn",
+          "charge": "tổ chức sử dụng trái phép chất ma túy",
+          "stage": "sơ thẩm",
+          "sentence": "2 năm 6 tháng tù",
+          "sentence_stage": "sơ thẩm",
+          "doc_id": "news-100260928173914514",
+          "evidence": "Tòa cũng tuyên phạt Đinh Đức Tuấn (36 tuổi) và Trần Ngọc Thảo (26 tuổi) 2 năm 6 tháng tù về tội tổ chức sử dụng trái phép chất ma túy."
+        },
+        {
+          "name": "Đỗ Thị Ngọc Yến",
+          "charge": "mua bán trái phép chất ma túy",
+          "stage": "sơ thẩm",
+          "sentence": "8 năm 6 tháng tù",
+          "sentence_stage": "sơ thẩm",
+          "doc_id": "news-100260928173914514",
+          "evidence": "Cùng tội danh trên, hội đồng xét xử tuyên phạt Đỗ Thị Ngọc Yến (26 tuổi) 8 năm 6 tháng tù, Võ Nữ Minh Thư (23 tuổi) 8 năm tù."
+        },
+        {
+          "name": "Đỗ Trần Cường",
+          "charge": "",
+          "stage": "không rõ",
+          "sentence": "",
+          "sentence_stage": "không rõ",
+          "doc_id": "news-100260924105118645",
+          "evidence": "Đỗ Trần Cường cũng được gia đình bỏ tiền nhờ Mai Anh lo kết quả."
+        }
+      ]
+    }
+  }
+}

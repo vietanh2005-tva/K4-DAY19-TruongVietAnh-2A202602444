@@ -23,7 +23,7 @@ PROVIDERS = {
     "openrouter": {"key": "OPENROUTER_API_KEY", "base_url": "https://openrouter.ai/api/v1",
                    "chat": "openai/gpt-4o-mini", "embed": "openai/text-embedding-3-small"},
     "gemini": {"key": "GEMINI_API_KEY", "base_url": "https://generativelanguage.googleapis.com/v1beta/openai/",
-               "chat": "gemini-2.5-flash-lite", "embed": "gemini-embedding-001"},
+               "chat": "gemini-3.5-flash-lite", "embed": "gemini-embedding-001"},
     "anthropic": {"key": "ANTHROPIC_API_KEY", "base_url": None,
                   "chat": "claude-opus-5-5", "embed": None},
 }
@@ -37,6 +37,9 @@ PRICES_PER_M = {
     "text-embedding-3-small": (0.02, 0.0),
     "text-embedding-3-large": (0.13, 0.0),
     "gemini-2.5-flash-lite": (0.10, 0.40),
+    # Standard paid text pricing checked 2026-10-05:
+    # https://ai.google.dev/gemini-api/docs/pricing
+    "gemini-3.5-flash-lite": (0.30, 2.50),
     # Gemini embedding pricing intentionally omitted: the current pricing page does not list gemini-embedding-001.
     "claude-opus-5-5": (4.00, 20.00),
     "claude-sonnet-5-5": (2.00, 10.00),
@@ -104,6 +107,8 @@ class MeteredLLM:
         self.embedding_model = f"{self.embed_provider}:{self.embed_model_id}"
         self._backend_name = self.embedding_model
         self.usage = Usage()
+        self._last_chat_at = 0.0
+        self._last_embed_at = 0.0
         self._chat_client: Any
         self._embed_client: Any
         if self.chat_provider == "anthropic":
@@ -115,6 +120,45 @@ class MeteredLLM:
                               else _openai_client(self.embed_provider))
 
     def chat(self, prompt: str, json_mode: bool = False) -> str:
+        if self.chat_provider != "gemini":
+            return self._chat_once(prompt, json_mode)
+        from openai import RateLimitError
+
+        for attempt in range(3):
+            # The lab's free Gemini project permits 15 chat requests/minute.
+            # Keep both ontology runs on the same provider/model, rather than
+            # switching providers on a rate-limit response.
+            interval = max(0.0, float(os.getenv("GEMINI_CHAT_INTERVAL", "4.2")))
+            delay = interval - (time.monotonic() - self._last_chat_at)
+            if delay > 0:
+                time.sleep(delay)
+            self._last_chat_at = time.monotonic()
+            try:
+                return self._chat_once(prompt, json_mode)
+            except RateLimitError as error:
+                if attempt == 2:
+                    raise
+                body = error.body
+                if isinstance(body, list) and body:
+                    body = body[0]
+                if isinstance(body, dict):
+                    body = body.get("error", body)
+                details = body.get("details", []) if isinstance(body, dict) else []
+                retry = next((d.get("retryDelay", "") for d in details
+                              if isinstance(d, dict) and "retryDelay" in d), "30s")
+                try:
+                    delay = float(retry.rstrip("s")) + 1
+                except (ValueError, AttributeError):
+                    delay = 31
+                # Longer cooldowns usually indicate unavailable quota: report
+                # the error rather than looping indefinitely.
+                if delay > 60:
+                    raise
+                print(f"[Gemini] Giới hạn tốc độ; đợi {delay:.0f}s rồi thử lại.", flush=True)
+                time.sleep(max(1, delay))
+        raise RuntimeError("Gemini retries exhausted")
+
+    def _chat_once(self, prompt: str, json_mode: bool = False) -> str:
         start = time.perf_counter()
         if self.chat_provider == "anthropic":
             text, model, tokens_in, tokens_out = self._chat_anthropic(prompt)
@@ -157,6 +201,40 @@ class MeteredLLM:
         return text, response.model, response.usage.input_tokens, response.usage.output_tokens
 
     def embed(self, text: str) -> list[float]:
+        if self.embed_provider != "gemini":
+            return self._embed_once(text)
+        from openai import RateLimitError
+
+        for attempt in range(3):
+            interval = max(0.0, float(os.getenv("GEMINI_EMBED_INTERVAL", "0.65")))
+            delay = interval - (time.monotonic() - self._last_embed_at)
+            if delay > 0:
+                time.sleep(delay)
+            self._last_embed_at = time.monotonic()
+            try:
+                return self._embed_once(text)
+            except RateLimitError as error:
+                if attempt == 2:
+                    raise
+                body = error.body
+                if isinstance(body, list) and body:
+                    body = body[0]
+                if isinstance(body, dict):
+                    body = body.get("error", body)
+                details = body.get("details", []) if isinstance(body, dict) else []
+                retry = next((d.get("retryDelay", "") for d in details
+                              if isinstance(d, dict) and "retryDelay" in d), "30s")
+                try:
+                    delay = float(retry.rstrip("s")) + 1
+                except (ValueError, AttributeError):
+                    delay = 31
+                if delay > 60:
+                    raise
+                print(f"[Gemini embedding] Giới hạn tốc độ; đợi {delay:.0f}s rồi thử lại.", flush=True)
+                time.sleep(max(1, delay))
+        raise RuntimeError("Gemini embedding retries exhausted")
+
+    def _embed_once(self, text: str) -> list[float]:
         start = time.perf_counter()
         response = self._embed_client.embeddings.create(model=self.embed_model_id, input=text)
         tokens = getattr(response.usage, "prompt_tokens", 0) or 0   # some OpenAI-compatible APIs omit usage

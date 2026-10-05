@@ -18,6 +18,11 @@ Suggested ontology (Crime is the bridge between the law KB and the news KB):
     (:Case)-[:INVOLVES {amount}]->(:Substance)
     (:Case)-[:LOCATED_IN]->(:Location {name})
     (:Person {name, aliases})-[:INVOLVED_IN {role, sentence, charge}]->(:Case)
+
+The default implementation uses the documented bonus ontology in bonus_graph.py:
+source-scoped Participation, Quantity and legal Threshold nodes. Set
+GRAPH_ONTOLOGY=hint for an unmodified suggested-ontology build and its guide-based
+retrieval, to generate the required comparison benchmark.
 """
 
 from __future__ import annotations
@@ -25,6 +30,7 @@ from __future__ import annotations
 import difflib
 import json
 import re
+import os
 from pathlib import Path
 from typing import Any, Callable
 
@@ -56,7 +62,16 @@ def link_entity(name: str, known: list[str], normalize: Callable[[str], str] = n
     """Map a free-text mention (e.g. a charge written by a journalist) onto one canonical name in `known`."""
     # TODO KG-1: normalize both sides, exact match first, then difflib.get_close_matches(cutoff=0.8).
     #            Return the ORIGINAL spelling from `known`; return None when nothing is close enough.
-    raise NotImplementedError("TODO KG-1 link_entity (src/graph.py) - kiểm tra: pytest tests/test_graph.py -k LinkEntity")
+    if not name or not known:
+        return None
+    lookup = {normalize(value): value for value in reversed(known)}
+    key = normalize(name)
+    if not key:
+        return None
+    if key in lookup:
+        return lookup[key]
+    matches = difflib.get_close_matches(key, list(lookup), n=1, cutoff=0.8)
+    return lookup[matches[0]] if matches else None
 
 def find_substances(text: str) -> list[str]:
     lowered = text.lower()
@@ -262,7 +277,9 @@ class Neo4jGraph:
         #   c. Articles named in the question ("Điều 251" -> re.findall(r"[Đđ]iều (\d+)", question)):
         #      clause 1 + clauses mentioning find_substances(question)
         #   d. One fact per clause: f"[{article_id} - {title}] khoản {number}: {text}"
-        raise NotImplementedError("TODO KG-3 Neo4jGraph.context (src/graph.py) - kiểm tra: python bench_kg.py --check")
+        from .bonus_graph import retrieve_context
+        mode = getattr(self, "ontology_mode", os.getenv("GRAPH_ONTOLOGY", "bonus"))
+        return retrieve_context(self, question, doc_ids, max_facts, mode)
 
 # ---------------------------------------------------------------------------------------------- KG-2
 
@@ -273,7 +290,22 @@ def build_graph(graph: Neo4jGraph, law_docs: list[Document], news_docs: list[Doc
     #   Contract: every node created from one document has the property doc_id = Document.id.
     #   Fastest start: the HINT helpers above (parse_law_article, extract_news_cases, suggested_constraints,
     #   add_law_article, add_news_case). Own ontology + report/ONTOLOGY.md = bonus (SUBMISSION.md).
-    raise NotImplementedError("TODO KG-2 build_graph (src/graph.py) - kiểm tra: python bench_kg.py --build --limit 2")
+    mode = os.getenv("GRAPH_ONTOLOGY", "bonus").strip().lower()
+    if mode not in {"hint", "bonus"}:
+        raise ValueError("GRAPH_ONTOLOGY must be hint or bonus")
+    graph.ontology_mode = mode
+    if mode == "bonus":
+        from .bonus_graph import build_bonus_graph
+        build_bonus_graph(graph, law_docs, news_docs, llm_fn)
+        return
+    graph.suggested_constraints()
+    articles = [parse_law_article(doc) for doc in law_docs]
+    for article in articles:
+        graph.add_law_article(article)
+    crimes = [article["crime"] for article in articles if article["crime"]]
+    for doc in news_docs:
+        for case in extract_news_cases(doc, lambda p: llm_fn(p, json_mode=True), crimes):
+            graph.add_news_case(case, doc)
 
 # ---------------------------------------------------------------------------------------------- KG-4
 
@@ -300,4 +332,13 @@ class GraphRAGAgent:
     def answer(self, question: str, top_k: int = 3) -> str:
         # TODO KG-4: vector top-k (same as flat RAG) -> doc_ids of the hits -> self.graph.context(question, doc_ids)
         #            -> fill GRAPH_PROMPT -> self.llm_fn(prompt)
-        raise NotImplementedError("TODO KG-4 GraphRAGAgent.answer (src/graph.py) - kiểm tra: pytest tests/test_graph.py -k GraphRAGAgent")
+        chunks = self.store.search(question, top_k=top_k)
+        doc_ids = list(dict.fromkeys(c["metadata"]["doc_id"] for c in chunks
+                                     if c.get("metadata", {}).get("doc_id")))
+        facts = self.graph.context(question, doc_ids)
+        prompt = GRAPH_PROMPT.format(
+            facts="\n".join(f"- {fact}" for fact in facts),
+            chunks="\n\n".join(f"[{i}] {c['content']}" for i, c in enumerate(chunks, 1)),
+            question=question,
+        )
+        return self.llm_fn(prompt)

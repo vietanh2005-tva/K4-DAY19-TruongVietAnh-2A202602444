@@ -1,0 +1,240 @@
+{
+  "mode": "hint",
+  "kind": "live Neo4j diagnostic with manually supplied source seeds",
+  "stats": {
+    "nodes": 197,
+    "relationships": 374
+  },
+  "contexts": {
+    "Q3": {
+      "question": "Lê Minh Thành bị tuyên bao nhiêu tháng tù, về tội gì, và tội đó được quy định tại điều nào của Bộ luật Hình sự với khung hình phạt cơ bản bao nhiêu?",
+      "doc_ids": [
+        "news-100260918080821054"
+      ],
+      "facts": [
+        "[news-100260918080821054] Vụ việc 'Vụ mua bán trái phép chất ma túy do Lê Minh Thành và đồng phạm thực hiện': Lê Minh Thành rủ ba thanh niên góp tiền mua ma túy dùng trong tiệc sinh nhật. Dù các bị cáo kháng cáo cho rằng đã rút lui, tòa vẫn tuyên phạt các bị cáo về tội mua bán trái phép chất ma túy.",
+        "[news-100260918080821054] Vụ việc 'Vụ vận chuyển ma túy qua sân bay Nội Bài do Cái Quang Huy thực hiện': Cái Quang Huy bị cáo buộc hai lần vận chuyển ma túy từ Đức về Việt Nam qua sân bay Nội Bài và hiện đang bỏ trốn.",
+        "Lê Minh Thành: {'sentence': '36 tháng tù', 'role': 'bị cáo', 'charge': 'mua bán trái phép chất ma túy'}",
+        "Trịnh Vũ Kiên: {'sentence': '24 tháng tù', 'role': 'bị cáo', 'charge': 'mua bán trái phép chất ma túy'}",
+        "Nguyễn Quang Hưng: {'sentence': '24 tháng tù', 'role': 'bị cáo', 'charge': 'mua bán trái phép chất ma túy'}",
+        "Kim Xuân Tuấn: {'sentence': '24 tháng tù', 'role': 'bị cáo', 'charge': 'mua bán trái phép chất ma túy'}",
+        "Cái Quang Huy: {'sentence': '', 'charge': 'vận chuyển trái phép chất ma túy', 'role': 'bị cáo'}",
+        "[Điều 250 BLHS - Tội vận chuyển trái phép chất ma túy] khoản 1: 1. Người nào vận chuyển trái phép chất ma túy mà không nhằm mục đích sản xuất, mua bán, tàng trữ trái phép chất ma túy thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 02 năm đến 07 năm:\n\na) Đã bị xử phạt vi phạm hành chính về hành vi quy định tại Điều này hoặc đã bị kết án về tội này hoặc một trong các tội quy định tại các điều 248, 249, 251 và 252 của Bộ luật này, chưa được xóa án tích mà còn vi phạm;\n\nb) Nhựa thuốc phiện, nhựa cần sa hoặc cao côca có khối lượng từ 01 gam đến dưới 500 gam;\n\nc) Heroine, Cocaine, Methamphetamine, Amphetamine, MDMA hoặc XLR-11 có khối lượng từ 0,1 gam đến dưới 05 gam;\n\nd) Lá cây côca; lá khát (lá cây Catha edulis); lá, rễ, thân, cành, hoa, quả của cây cần sa hoặc bộ phận của cây khác có chứa chất ma túy do Chính phủ quy định có khối lượng từ 01 kilôgam đến dưới 10 kilôgam;\n\nđ) Quả thuốc phiện khô có khối lượng từ 05 kilôgam đến dưới 50 kilôgam;\n\ne) Quả thuốc phiện tươi có khối lượng từ 01 kilôgam đến dưới 10 kilôgam;\n\ng) Các chất ma túy khác ở thể rắn có khối lượng từ 01 gam đến dưới 20 gam;\n\nh) Các chất ma túy khác ở thể lỏng có thể tích từ 10 mililít đến dưới 100 mililít;\n\ni) Có 02 chất ma túy trở lên mà tổng khối lượng hoặc thể tích của các chất đó tương đương với khối lượng hoặc thể tích chất ma túy quy định tại một trong các điểm từ điểm b đến điểm h khoản này.",
+        "[Điều 250 BLHS - Tội vận chuyển trái phép chất ma túy] khoản 2: 2. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 07 năm đến 15 năm:\n\na) Có tổ chức;\n\nb) Phạm tội 02 lần trở lên;\n\nc) Lợi dụng chức vụ, quyền hạn;\n\nd) Lợi dụng danh nghĩa cơ quan, tổ chức;\n\nđ) Sử dụng người dưới 16 tuổi vào việc phạm tội;\n\ne) Qua biên giới;\n\ng) Nhựa thuốc phiện, nhựa cần sa hoặc cao côca có khối lượng từ 500 gam đến dưới 01 kilôgam;\n\nh) Heroine, Cocaine, Methamphetamine, Amphetamine, MDMA hoặc XLR-11 có khối lượng từ 05 gam đến dưới 30 gam;\n\ni) Lá cây côca; lá khát (lá cây Catha edulis); lá, rễ, thân, cành, hoa, quả của cây cần sa hoặc bộ phận của cây khác có chứa chất ma túy do Chính phủ quy định có khối lượng từ 10 kilôgam đến dưới 25 kilôgam;\n\nk) Quả thuốc phiện khô có khối lượng từ 50 kilôgam đến dưới 200 kilôgam;\n\nl) Quả thuốc phiện tươi có khối lượng từ 10 kilôgam đến dưới 50 kilôgam;\n\nm) Các chất ma túy khác ở thể rắn có khối lượng từ 20 gam đến dưới 100 gam;\n\nn) Các chất ma túy khác ở thể lỏng có thể tích từ 100 mililít đến dưới 250 mililít;\n\no) Có 02 chất ma túy trở lên mà tổng khối lượng hoặc thể tích của các chất đó tương đương với khối lượng hoặc thể tích chất ma túy quy định tại một trong các điểm từ điểm g đến điểm n khoản này;\n\np) Tái phạm nguy hiểm.",
+        "[Điều 250 BLHS - Tội vận chuyển trái phép chất ma túy] khoản 3: 3. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 15 năm đến 20 năm:\n\na) Nhựa thuốc phiện, nhựa cần sa hoặc cao côca có khối lượng từ 01 kilôgam đến dưới 05 kilôgam;\n\nb) Heroine, Cocaine, Methamphetamine, Amphetamine, MDMA hoặc XLR-11 có khối lượng từ 30 gam đến dưới 100 gam;\n\nc) Lá cây côca; lá khát (lá cây Catha edulis); lá, rễ, thân, cành, hoa, quả của cây cần sa hoặc bộ phận của cây khác có chứa chất ma túy do Chính phủ quy định có khối lượng từ 25 kilôgam đến dưới 75 kilôgam;\n\nd) Quả thuốc phiện khô có khối lượng từ 200 kilôgam đến dưới 600 kilôgam;\n\nđ) Quả thuốc phiện tươi có khối lượng từ 50 kilôgam đến dưới 150 kilôgam;\n\ne) Các chất ma túy khác ở thể rắn có khối lượng từ 100 gam đến dưới 300 gam;\n\ng) Các chất ma túy khác ở thể lỏng có thể tích từ 250 mililít đến dưới 750 mililít;\n\nh) Có 02 chất ma túy trở lên mà tổng khối lượng hoặc thể tích của các chất đó tương đương với khối lượng hoặc thể tích chất ma túy quy định tại một trong các điểm từ điểm a đến điểm g khoản này.",
+        "[Điều 250 BLHS - Tội vận chuyển trái phép chất ma túy] khoản 4: 4. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù 20 năm, tù chung thân hoặc tử hình:\n\na) Nhựa thuốc phiện, nhựa cần sa hoặc cao côca có khối lượng 05 kilôgam trở lên;\n\nb) Heroine, Cocaine, Methamphetamine, Amphetamine, MDMA hoặc XLR-11 có khối lượng 100 gam trở lên;\n\nc) Lá cây côca; lá khát (lá cây Catha edulis); lá, rễ, thân, cành, hoa, quả của cây cần sa hoặc bộ phận của cây khác có chứa chất ma túy do Chính phủ quy định có khối lượng 75 kilôgam trở lên;\n\nd) Quả thuốc phiện khô có khối lượng 600 kilôgam trở lên;\n\nđ) Quả thuốc phiện tươi có khối lượng 150 kilôgam trở lên;\n\ne) Các chất ma túy khác ở thể rắn có khối lượng 300 gam trở lên;\n\ng) Các chất ma túy khác ở thể lỏng có thể tích 750 mililít trở lên;\n\nh) Có 02 chất ma túy trở lên mà tổng khối lượng hoặc thể tích của các chất đó tương đương với khối lượng hoặc thể tích chất ma túy quy định tại một trong các điểm từ điểm a đến điểm g khoản này.",
+        "[Điều 251 BLHS - Tội mua bán trái phép chất ma túy] khoản 1: 1. Người nào mua bán trái phép chất ma túy, thì bị phạt tù từ 02 năm đến 07 năm.",
+        "[Điều 251 BLHS - Tội mua bán trái phép chất ma túy] khoản 2: 2. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 07 năm đến 15 năm:\n\na) Có tổ chức;\n\nb) Phạm tội 02 lần trở lên;\n\nc) Đối với 02 người trở lên;\n\nd) Lợi dụng chức vụ, quyền hạn;\n\nđ) Lợi dụng danh nghĩa cơ quan, tổ chức;\n\ne) Sử dụng người dưới 16 tuổi vào việc phạm tội hoặc bán ma túy cho người dưới 16 tuổi;\n\ng) Qua biên giới;\n\nh) Nhựa thuốc phiện, nhựa cần sa hoặc cao côca có khối lượng từ 500 gam đến dưới 01 kilôgam;\n\ni) Heroine, Cocaine, Methamphetamine, Amphetamine, MDMA hoặc XLR-11 có khối lượng từ 05 gam đến dưới 30 gam;\n\nk) Lá cây côca; lá khát (lá cây Catha edulis); lá, rễ, thân, cành, hoa, quả của cây cần sa hoặc bộ phận của cây khác có chứa chất ma túy do Chính phủ quy định có khối lượng từ 10 kilôgam đến dưới 25 kilôgam;\n\nl) Quả thuốc phiện khô có khối lượng từ 50 kilôgam đến dưới 200 kilôgam;\n\nm) Quả thuốc phiện tươi có khối lượng từ 10 kilôgam đến dưới 50 kilôgam;\n\nn) Các chất ma túy khác ở thể rắn có khối lượng từ 20 gam đến dưới 100 gam;\n\no) Các chất ma túy khác ở thể lỏng có thể tích từ 100 mililít đến dưới 250 mililít;\n\np) Có 02 chất ma túy trở lên mà tổng khối lượng hoặc thể tích của các chất đó tương đương với khối lượng hoặc thể tích chất ma túy quy định tại một trong các điểm từ điểm h đến điểm o khoản này;\n\nq) Tái phạm nguy hiểm.",
+        "[Điều 251 BLHS - Tội mua bán trái phép chất ma túy] khoản 3: 3. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 15 năm đến 20 năm:\n\na) Nhựa thuốc phiện, nhựa cần sa hoặc cao côca có khối lượng từ 01 kilôgam đến dưới 05 kilôgam;\n\nb) Heroine, Cocaine, Methamphetamine, Amphetamine, MDMA hoặc XLR-11 có khối lượng từ 30 gam đến dưới 100 gam;\n\nc) Lá cây côca; lá khát (lá cây Catha edulis); lá, rễ, thân, cành, hoa, quả của cây cần sa hoặc bộ phận của cây khác có chứa chất ma túy do Chính phủ quy định có khối lượng từ 25 kilôgam đến dưới 75 kilôgam;\n\nd) Quả thuốc phiện khô có khối lượng từ 200 kilôgam đến dưới 600 kilôgam;\n\nđ) Quả thuốc phiện tươi có khối lượng từ 50 kilôgam đến dưới 150 kilôgam;\n\ne) Các chất ma túy khác ở thể rắn có khối lượng từ 100 gam đến dưới 300 gam;\n\ng) Các chất ma túy khác ở thể lỏng có thể tích từ 250 mililít đến dưới 750 mililít;\n\nh) Có 02 chất ma túy trở lên mà tổng khối lượng hoặc thể tích của các chất đó tương đương với khối lượng hoặc thể tích chất ma túy quy định tại một trong các điểm từ điểm a đến điểm g khoản này.",
+        "[Điều 251 BLHS - Tội mua bán trái phép chất ma túy] khoản 4: 4. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù 20 năm, tù chung thân hoặc tử hình:\n\na) Nhựa thuốc phiện, nhựa cần sa hoặc cao côca có khối lượng 05 kilôgam trở lên;\n\nb) Heroine, Cocaine, Methamphetamine, Amphetamine, MDMA hoặc XLR-11 có khối lượng 100 gam trở lên;\n\nc) Lá cây côca; lá khát (lá cây Catha edulis); lá, rễ, thân, cành, hoa, quả của cây cần sa hoặc bộ phận của cây khác có chứa chất ma túy do Chính phủ quy định có khối lượng 75 kilôgam trở lên;\n\nd) Quả thuốc phiện khô có khối lượng 600 kilôgam trở lên;\n\nđ) Quả thuốc phiện tươi có khối lượng 150 kilôgam trở lên;\n\ne) Các chất ma túy khác ở thể rắn có khối lượng 300 gam trở lên;\n\ng) Các chất ma túy khác ở thể lỏng có thể tích 750 mililít trở lên;\n\nh) Có 02 chất ma túy trở lên mà tổng khối lượng hoặc thể tích của các chất đó tương đương với khối lượng hoặc thể tích chất ma túy quy định tại một trong các điểm từ điểm a đến điểm g khoản này.",
+        "(Case: Vụ mua bán trái phép chất ma túy do Lê Minh Thành và đồng phạm thực hiện) -[INVOLVES {amount: 5 viên}]-> (Substance: MDMA)",
+        "(Person: Lê Minh Thành) -[INVOLVED_IN {sentence: 36 tháng tù, role: bị cáo, charge: mua bán trái phép chất ma túy}]-> (Case: Vụ mua bán trái phép chất ma túy do Lê Minh Thành và đồng phạm thực hiện)",
+        "(Person: Trịnh Vũ Kiên) -[INVOLVED_IN {sentence: 24 tháng tù, role: bị cáo, charge: mua bán trái phép chất ma túy}]-> (Case: Vụ mua bán trái phép chất ma túy do Lê Minh Thành và đồng phạm thực hiện)",
+        "(Case: Vụ mua bán trái phép chất ma túy do Lê Minh Thành và đồng phạm thực hiện) -[INVOLVES {amount: nửa chỉ}]-> (Substance: Ketamine)",
+        "(Person: Nguyễn Quang Hưng) -[INVOLVED_IN {sentence: 24 tháng tù, role: bị cáo, charge: mua bán trái phép chất ma túy}]-> (Case: Vụ mua bán trái phép chất ma túy do Lê Minh Thành và đồng phạm thực hiện)",
+        "(Case: Vụ mua bán trái phép chất ma túy do Lê Minh Thành và đồng phạm thực hiện) -[LOCATED_IN]-> (Location: Hà Nội)",
+        "(Case: Vụ mua bán trái phép chất ma túy do Lê Minh Thành và đồng phạm thực hiện) -[CHARGED_WITH]-> (Crime: mua bán trái phép chất ma túy)",
+        "(Person: Kim Xuân Tuấn) -[INVOLVED_IN {sentence: 24 tháng tù, role: bị cáo, charge: mua bán trái phép chất ma túy}]-> (Case: Vụ mua bán trái phép chất ma túy do Lê Minh Thành và đồng phạm thực hiện)",
+        "(Case: Vụ vận chuyển ma túy qua sân bay Nội Bài do Cái Quang Huy thực hiện) -[INVOLVES {amount: hơn 9,6kg}]-> (Substance: MDMA)",
+        "(Person: Cái Quang Huy) -[INVOLVED_IN {charge: vận chuyển trái phép chất ma túy, role: bị cáo}]-> (Case: Vụ vận chuyển ma túy qua sân bay Nội Bài do Cái Quang Huy thực hiện)",
+        "(Case: Vụ vận chuyển ma túy qua sân bay Nội Bài do Cái Quang Huy thực hiện) -[INVOLVES {amount: gần 406g}]-> (Substance: Ketamine)",
+        "(Case: Vụ vận chuyển ma túy qua sân bay Nội Bài do Cái Quang Huy thực hiện) -[CHARGED_WITH]-> (Crime: vận chuyển trái phép chất ma túy)",
+        "(Case: Vụ vận chuyển ma túy qua sân bay Nội Bài do Cái Quang Huy thực hiện) -[LOCATED_IN]-> (Location: Hà Nội)"
+      ]
+    },
+    "Q4": {
+      "question": "Giang hồ 'Hoàng Nato' bị bắt về hành vi gì, và hành vi đó có thể bị phạt tù tối đa bao nhiêu theo Bộ luật Hình sự?",
+      "doc_ids": [
+        "news-100260920221957595"
+      ],
+      "facts": [
+        "[news-100260922111804786] Vụ việc 'Vụ bắt giữ 126 người liên quan ma túy tại TP.HCM': Công an TP.HCM triệt phá 8 đường dây ma túy, bắt và xử lý 126 người trong đó có TikToker Phannhibeauty và giang hồ 'Hoàng Nato'.",
+        "[news-100260924095400982] Vụ việc 'Vụ sử dụng pod chill chứa ma túy của 'Hoàng Nato' và TikToker Phannhibeauty': Dương Minh Tuấn ('Hoàng Nato') và bạn gái Phan Kim Nhi (TikToker Phannhibeauty) bị bắt do cùng nhau tổ chức sử dụng ma túy etomidate ngụy trang trong thuốc lá điện tử (pod chill) tại TP.HCM.",
+        "[news-100260925144412498] Vụ việc 'Vụ triệt phá 8 đường dây ma túy liên quan 'Hoàng Nato' tại TP.HCM': Công an TP.HCM triệt phá 8 đường dây ma túy, bắt giữ 126 người liên quan đến các hành vi mua bán, tàng trữ, tổ chức sử dụng và sử dụng trái phép chất ma túy do Dương Minh Tuấn cầm đầu.",
+        "Dương Minh Tuấn: {'sentence': '', 'charge': 'tổ chức sử dụng trái phép chất ma túy', 'role': 'nghi phạm'}",
+        "Phan Kim Nhi: {'sentence': '', 'charge': 'tổ chức sử dụng trái phép chất ma túy', 'role': 'nghi phạm'}",
+        "Phạm Minh Sang: {'sentence': '', 'charge': 'mua bán trái phép chất ma túy', 'role': 'nghi phạm'}",
+        "Kim Yu Young: {'sentence': '', 'charge': 'mua bán trái phép chất ma túy', 'role': 'nghi phạm'}",
+        "Lê Đăng Khoa: {'sentence': '', 'charge': 'mua bán trái phép chất ma túy', 'role': 'nghi phạm'}",
+        "Nguyễn Hoàng Khả Ái: {'sentence': '', 'role': 'người liên quan', 'charge': ''}",
+        "Giang Quốc Khánh: {'sentence': '', 'charge': 'mua bán trái phép chất ma túy', 'role': 'nghi phạm'}",
+        "Nguyễn Thành Quốc: {'sentence': '', 'charge': 'mua bán trái phép chất ma túy', 'role': 'nghi phạm'}",
+        "Phạm Tài Vình: {'sentence': '', 'charge': 'mua bán trái phép chất ma túy', 'role': 'nghi phạm'}",
+        "Phạm Phương Anh: {'sentence': '', 'charge': 'mua bán trái phép chất ma túy', 'role': 'nghi phạm'}",
+        "[Điều 249 BLHS - Tội tàng trữ trái phép chất ma túy] khoản 1: 1. Người nào tàng trữ trái phép chất ma túy mà không nhằm mục đích mua bán, vận chuyển, sản xuất trái phép chất ma túy thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 01 năm đến 05 năm:\n\na) Đã bị xử phạt vi phạm hành chính về hành vi quy định tại Điều này hoặc đã bị kết án về tội này hoặc một trong các tội quy định tại các điều 248, 250, 251 và 252 của Bộ luật này, chưa được xóa án tích mà còn vi phạm;\n\nb) Nhựa thuốc phiện, nhựa cần sa hoặc cao côca có khối lượng từ 01 gam đến dưới 500 gam;\n\nc) Heroine, Cocaine, Methamphetamine, Amphetamine, MDMA hoặc XLR-11 có khối lượng từ 0,1 gam đến dưới 05 gam;\n\nd) Lá cây côca; lá khát (lá cây Catha edulis); lá, rễ, thân, cành, hoa, quả của cây cần sa hoặc bộ phận của cây khác có chứa chất ma túy do Chính phủ quy định có khối lượng từ 01 kilôgam đến dưới 10 kilôgam;\n\nđ) Quả thuốc phiện khô có khối lượng từ 05 kilôgam đến dưới 50 kilôgam;\n\ne) Quả thuốc phiện tươi có khối lượng từ 01 kilôgam đến dưới 10 kilôgam;\n\ng) Các chất ma túy khác ở thể rắn có khối lượng từ 01 gam đến dưới 20 gam;\n\nh) Các chất ma túy khác ở thể lỏng có thể tích từ 10 mililít đến dưới 100 mililít;\n\ni) Có 02 chất ma túy trở lên mà tổng khối lượng hoặc thể tích của các chất đó tương đương với khối lượng hoặc thể tích chất ma túy quy định tại một trong các điểm từ điểm b đến điểm h khoản này.",
+        "[Điều 249 BLHS - Tội tàng trữ trái phép chất ma túy] khoản 2: 2. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 05 năm đến 10 năm:\n\na) Có tổ chức;\n\nb) Phạm tội 02 lần trở lên;\n\nc) Lợi dụng chức vụ, quyền hạn;\n\nd) Lợi dụng danh nghĩa cơ quan, tổ chức;\n\nđ) Sử dụng người dưới 16 tuổi vào việc phạm tội;\n\ne) Nhựa thuốc phiện, nhựa cần sa hoặc cao côca có khối lượng từ 500 gam đến dưới 01 kilôgam;\n\ng) Heroine, Cocaine, Methamphetamine, Amphetamine, MDMA hoặc XLR-11 có khối lượng từ 05 gam đến dưới 30 gam;\n\nh) Lá cây côca; lá khát (lá cây Catha edulis); lá, rễ, thân, cành, hoa, quả của cây cần sa hoặc bộ phận của cây khác có chứa chất ma túy do Chính phủ quy định có khối lượng từ 10 kilôgam đến dưới 25 kilôgam;\n\ni) Quả thuốc phiện khô có khối lượng từ 50 kilôgam đến dưới 200 kilôgam;\n\nk) Quả thuốc phiện tươi có khối lượng từ 10 kilôgam đến dưới 50 kilôgam;\n\nl) Các chất ma túy khác ở thể rắn có khối lượng từ 20 gam đến dưới 100 gam;\n\nm) Các chất ma túy khác ở thể lỏng có thể tích từ 100 mililít đến dưới 250 mililít;\n\nn) Có 02 chất ma túy trở lên mà tổng khối lượng hoặc thể tích của các chất đó tương đương với khối lượng hoặc thể tích chất ma túy quy định tại một trong các điểm từ điểm e đến điểm m khoản này;\n\no) Tái phạm nguy hiểm.",
+        "[Điều 249 BLHS - Tội tàng trữ trái phép chất ma túy] khoản 3: 3. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 10 năm đến 15 năm:\n\na) Nhựa thuốc phiện, nhựa cần sa hoặc cao côca có khối lượng từ 01 kilôgam đến dưới 05 kilôgam;\n\nb) Heroine, Cocaine, Methamphetamine, Amphetamine, MDMA hoặc XLR-11 có khối lượng từ 30 gam đến dưới 100 gam;\n\nc) Lá cây côca; lá khát (lá cây Catha edulis); lá, rễ, thân, cành, hoa, quả của cây cần sa hoặc bộ phận của cây khác có chứa chất ma túy do Chính phủ quy định có khối lượng từ 25 kilôgam đến dưới 75 kilôgam;\n\nd) Quả thuốc phiện khô có khối lượng từ 200 kilôgam đến dưới 600 kilôgam;\n\nđ) Quả thuốc phiện tươi có khối lượng tù 50 kilôgam đến dưới 150 kilôgam;\n\ne) Các chất ma túy khác ở thể rắn có khối lượng từ 100 gam đến dưới 300 gam;\n\ng) Các chất ma túy khác ở thể lỏng có thể tích từ 250 mililít đến dưới 750 mililít;\n\nh) Có 02 chất ma túy trở lên mà tổng khối lượng hoặc thể tích của các chất đó tương đương với khối lượng hoặc thể tích chất ma túy quy định tại một trong các điểm từ điểm a đến điểm g khoản này.",
+        "[Điều 249 BLHS - Tội tàng trữ trái phép chất ma túy] khoản 4: 4. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 15 năm đến 20 năm hoặc tù chung thân:\n\na) Nhựa thuốc phiện, nhựa cần sa hoặc cao côca có khối lượng 05 kilôgam trở lên;\n\nb) Heroine, Cocaine, Methamphetamine, Amphetamine, MDMA hoặc XLR-11 có khối lượng 100 gam trở lên;\n\nc) Lá cây côca; lá khát (lá cây Catha edulis); lá, rễ, thân, cành, hoa, quả của cây cần sa hoặc bộ phận của cây khác có chứa chất ma túy do Chính phủ quy định có khối lượng 75 kilôgam trở lên;\n\nd) Quả thuốc phiện khô có khối lượng 600 kilôgam trở lên;\n\nđ) Quả thuốc phiện tươi có khối lượng 150 kilôgam trở lên;\n\ne) Các chất ma túy khác ở thể rắn có khối lượng 300 gam trở lên;\n\ng) Các chất ma túy khác ở thể lỏng có thể tích 750 mililít trở lên;\n\nh) Có 02 chất ma túy trở lên mà tổng khối lượng hoặc thể tích của các chất đó tương đương với khối lượng hoặc thể tích chất ma túy quy định tại một trong các điểm từ điểm a đến điểm g khoản này.",
+        "[Điều 251 BLHS - Tội mua bán trái phép chất ma túy] khoản 1: 1. Người nào mua bán trái phép chất ma túy, thì bị phạt tù từ 02 năm đến 07 năm.",
+        "[Điều 251 BLHS - Tội mua bán trái phép chất ma túy] khoản 2: 2. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 07 năm đến 15 năm:\n\na) Có tổ chức;\n\nb) Phạm tội 02 lần trở lên;\n\nc) Đối với 02 người trở lên;\n\nd) Lợi dụng chức vụ, quyền hạn;\n\nđ) Lợi dụng danh nghĩa cơ quan, tổ chức;\n\ne) Sử dụng người dưới 16 tuổi vào việc phạm tội hoặc bán ma túy cho người dưới 16 tuổi;\n\ng) Qua biên giới;\n\nh) Nhựa thuốc phiện, nhựa cần sa hoặc cao côca có khối lượng từ 500 gam đến dưới 01 kilôgam;\n\ni) Heroine, Cocaine, Methamphetamine, Amphetamine, MDMA hoặc XLR-11 có khối lượng từ 05 gam đến dưới 30 gam;\n\nk) Lá cây côca; lá khát (lá cây Catha edulis); lá, rễ, thân, cành, hoa, quả của cây cần sa hoặc bộ phận của cây khác có chứa chất ma túy do Chính phủ quy định có khối lượng từ 10 kilôgam đến dưới 25 kilôgam;\n\nl) Quả thuốc phiện khô có khối lượng từ 50 kilôgam đến dưới 200 kilôgam;\n\nm) Quả thuốc phiện tươi có khối lượng từ 10 kilôgam đến dưới 50 kilôgam;\n\nn) Các chất ma túy khác ở thể rắn có khối lượng từ 20 gam đến dưới 100 gam;\n\no) Các chất ma túy khác ở thể lỏng có thể tích từ 100 mililít đến dưới 250 mililít;\n\np) Có 02 chất ma túy trở lên mà tổng khối lượng hoặc thể tích của các chất đó tương đương với khối lượng hoặc thể tích chất ma túy quy định tại một trong các điểm từ điểm h đến điểm o khoản này;\n\nq) Tái phạm nguy hiểm.",
+        "[Điều 251 BLHS - Tội mua bán trái phép chất ma túy] khoản 3: 3. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 15 năm đến 20 năm:\n\na) Nhựa thuốc phiện, nhựa cần sa hoặc cao côca có khối lượng từ 01 kilôgam đến dưới 05 kilôgam;\n\nb) Heroine, Cocaine, Methamphetamine, Amphetamine, MDMA hoặc XLR-11 có khối lượng từ 30 gam đến dưới 100 gam;\n\nc) Lá cây côca; lá khát (lá cây Catha edulis); lá, rễ, thân, cành, hoa, quả của cây cần sa hoặc bộ phận của cây khác có chứa chất ma túy do Chính phủ quy định có khối lượng từ 25 kilôgam đến dưới 75 kilôgam;\n\nd) Quả thuốc phiện khô có khối lượng từ 200 kilôgam đến dưới 600 kilôgam;\n\nđ) Quả thuốc phiện tươi có khối lượng từ 50 kilôgam đến dưới 150 kilôgam;\n\ne) Các chất ma túy khác ở thể rắn có khối lượng từ 100 gam đến dưới 300 gam;\n\ng) Các chất ma túy khác ở thể lỏng có thể tích từ 250 mililít đến dưới 750 mililít;\n\nh) Có 02 chất ma túy trở lên mà tổng khối lượng hoặc thể tích của các chất đó tương đương với khối lượng hoặc thể tích chất ma túy quy định tại một trong các điểm từ điểm a đến điểm g khoản này.",
+        "[Điều 251 BLHS - Tội mua bán trái phép chất ma túy] khoản 4: 4. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù 20 năm, tù chung thân hoặc tử hình:\n\na) Nhựa thuốc phiện, nhựa cần sa hoặc cao côca có khối lượng 05 kilôgam trở lên;\n\nb) Heroine, Cocaine, Methamphetamine, Amphetamine, MDMA hoặc XLR-11 có khối lượng 100 gam trở lên;\n\nc) Lá cây côca; lá khát (lá cây Catha edulis); lá, rễ, thân, cành, hoa, quả của cây cần sa hoặc bộ phận của cây khác có chứa chất ma túy do Chính phủ quy định có khối lượng 75 kilôgam trở lên;\n\nd) Quả thuốc phiện khô có khối lượng 600 kilôgam trở lên;\n\nđ) Quả thuốc phiện tươi có khối lượng 150 kilôgam trở lên;\n\ne) Các chất ma túy khác ở thể rắn có khối lượng 300 gam trở lên;\n\ng) Các chất ma túy khác ở thể lỏng có thể tích 750 mililít trở lên;\n\nh) Có 02 chất ma túy trở lên mà tổng khối lượng hoặc thể tích của các chất đó tương đương với khối lượng hoặc thể tích chất ma túy quy định tại một trong các điểm từ điểm a đến điểm g khoản này.",
+        "[Điều 255 BLHS - Tội tổ chức sử dụng trái phép chất ma túy] khoản 1: 1. Người nào tổ chức sử dụng trái phép chất ma túy dưới bất kỳ hình thức nào, thì bị phạt tù từ 02 năm đến 07 năm.",
+        "(Person: Dương Minh Tuấn) -[INVOLVED_IN {charge: tổ chức sử dụng trái phép chất ma túy, role: nghi phạm}]-> (Case: Vụ sử dụng pod chill chứa ma túy của 'Hoàng Nato' và TikToker Phannhibeauty)",
+        "(Person: Dương Minh Tuấn) -[INVOLVED_IN {charge: tổ chức sử dụng trái phép chất ma túy, role: nghi phạm}]-> (Case: Vụ bắt giữ 126 người liên quan ma túy tại TP.HCM)",
+        "(Person: Dương Minh Tuấn) -[INVOLVED_IN {charge: tổ chức sử dụng trái phép chất ma túy, role: nghi phạm}]-> (Case: Vụ triệt phá 8 đường dây ma túy liên quan 'Hoàng Nato' tại TP.HCM)"
+      ]
+    },
+    "Q5": {
+      "question": "Cái Quang Huy bị truy tố về tội gì với loại ma túy nào? Với khối lượng MDMA trong vụ này, khoản nào của điều luật tương ứng được áp dụng và khung hình phạt là gì?",
+      "doc_ids": [
+        "news-100260917203001265"
+      ],
+      "facts": [
+        "[news-100260918080821054] Vụ việc 'Vụ mua bán trái phép chất ma túy do Lê Minh Thành và đồng phạm thực hiện': Lê Minh Thành rủ ba thanh niên góp tiền mua ma túy dùng trong tiệc sinh nhật. Dù các bị cáo kháng cáo cho rằng đã rút lui, tòa vẫn tuyên phạt các bị cáo về tội mua bán trái phép chất ma túy.",
+        "[news-100260930085028036] Vụ việc 'Vụ tổ chức sử dụng trái phép chất ma túy và tàng trữ ma túy tại Sầm Sơn và Viện Pháp y tâm thần Trung ương': Lê Văn Đông trong thời gian chữa bệnh bắt buộc tại Viện Pháp y tâm thần Trung ương đã trốn viện, tổ chức tiệc ma túy trên bãi biển Sầm Sơn cùng điều dưỡng và đàn em, đồng thời tàng trữ ma túy ngay trong phòng bệnh.",
+        "[news-100260917203001265] Vụ việc 'Vụ vận chuyển hơn 10kg ma túy từ Đức về Việt Nam qua sân bay Nội Bài': Cái Quang Huy bị cáo buộc hai lần vận chuyển trái phép ma túy từ Đức về Việt Nam qua sân bay Nội Bài, thông qua sự giúp sức của Nguyễn Tiến Đạt và một người khác.",
+        "[news-100260918080821054] Vụ việc 'Vụ vận chuyển ma túy qua sân bay Nội Bài do Cái Quang Huy thực hiện': Cái Quang Huy bị cáo buộc hai lần vận chuyển ma túy từ Đức về Việt Nam qua sân bay Nội Bài và hiện đang bỏ trốn.",
+        "[news-100260924105118645] Vụ việc 'Vụ án sai phạm và sử dụng trái phép chất ma túy tại Viện Pháp y tâm thần Trung ương': Nhiều đối tượng phạm tội ma túy và lừa đảo chi tiền “chạy” giám định tâm thần để trốn tránh trách nhiệm, đồng thời tổ chức sử dụng ma túy và nhận hối lộ tại Viện Pháp y tâm thần Trung ương.",
+        "Nguyễn Thị Mai Anh: {'sentence': '', 'charge': '', 'role': 'bị can'}",
+        "Bùi Thị Thanh Thủy: {'sentence': '', 'charge': 'mua bán trái phép chất ma túy', 'role': 'bị can'}",
+        "Lê Văn Thưởng: {'sentence': '', 'charge': '', 'role': 'cán bộ'}",
+        "Trần Quốc An: {'sentence': '', 'charge': '', 'role': 'cán bộ'}",
+        "Ngô Văn Vinh: {'sentence': '', 'charge': '', 'role': 'cán bộ'}",
+        "Nguyễn Thị Thu Hoài: {'sentence': '', 'charge': '', 'role': 'cán bộ'}",
+        "Dương Văn Biết: {'sentence': '', 'charge': '', 'role': 'cán bộ'}",
+        "Lê Văn Đông: {'sentence': '', 'charge': '', 'role': 'bị can'}",
+        "Nguyễn Văn Quang: {'sentence': '', 'charge': '', 'role': 'cán bộ'}",
+        "Dương Văn Lương: {'sentence': '', 'charge': '', 'role': 'cán bộ'}",
+        "Trần Văn Trường: {'sentence': '', 'charge': '', 'role': 'cán bộ'}",
+        "Trần Quốc An: {'sentence': '', 'charge': '', 'role': 'bị cáo'}",
+        "Ngô Việt Dũng: {'sentence': '', 'charge': '', 'role': 'bị cáo'}",
+        "Lê Văn Đông: {'sentence': '', 'charge': 'tổ chức sử dụng trái phép chất ma túy', 'role': 'bị cáo'}",
+        "Cao Thị Bích Hằng: {'sentence': '', 'role': 'người liên quan', 'charge': ''}",
+        "Nguyễn Thị Mai Anh: {'sentence': '', 'charge': '', 'role': 'bị cáo'}",
+        "Cái Quang Huy: {'sentence': '', 'charge': 'vận chuyển trái phép chất ma túy', 'role': 'bị cáo'}",
+        "Lê Minh Thành: {'sentence': '36 tháng tù', 'role': 'bị cáo', 'charge': 'mua bán trái phép chất ma túy'}",
+        "Trịnh Vũ Kiên: {'sentence': '24 tháng tù', 'role': 'bị cáo', 'charge': 'mua bán trái phép chất ma túy'}",
+        "Nguyễn Quang Hưng: {'sentence': '24 tháng tù', 'role': 'bị cáo', 'charge': 'mua bán trái phép chất ma túy'}",
+        "Kim Xuân Tuấn: {'sentence': '24 tháng tù', 'role': 'bị cáo', 'charge': 'mua bán trái phép chất ma túy'}",
+        "Nguyễn Hữu Đức: {'sentence': '', 'role': 'người liên quan', 'charge': ''}",
+        "Nguyễn Tiến Đạt: {'sentence': '', 'charge': 'vận chuyển trái phép chất ma túy', 'role': 'bị cáo'}",
+        "[Điều 249 BLHS - Tội tàng trữ trái phép chất ma túy] khoản 1: 1. Người nào tàng trữ trái phép chất ma túy mà không nhằm mục đích mua bán, vận chuyển, sản xuất trái phép chất ma túy thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 01 năm đến 05 năm:\n\na) Đã bị xử phạt vi phạm hành chính về hành vi quy định tại Điều này hoặc đã bị kết án về tội này hoặc một trong các tội quy định tại các điều 248, 250, 251 và 252 của Bộ luật này, chưa được xóa án tích mà còn vi phạm;\n\nb) Nhựa thuốc phiện, nhựa cần sa hoặc cao côca có khối lượng từ 01 gam đến dưới 500 gam;\n\nc) Heroine, Cocaine, Methamphetamine, Amphetamine, MDMA hoặc XLR-11 có khối lượng từ 0,1 gam đến dưới 05 gam;\n\nd) Lá cây côca; lá khát (lá cây Catha edulis); lá, rễ, thân, cành, hoa, quả của cây cần sa hoặc bộ phận của cây khác có chứa chất ma túy do Chính phủ quy định có khối lượng từ 01 kilôgam đến dưới 10 kilôgam;\n\nđ) Quả thuốc phiện khô có khối lượng từ 05 kilôgam đến dưới 50 kilôgam;\n\ne) Quả thuốc phiện tươi có khối lượng từ 01 kilôgam đến dưới 10 kilôgam;\n\ng) Các chất ma túy khác ở thể rắn có khối lượng từ 01 gam đến dưới 20 gam;\n\nh) Các chất ma túy khác ở thể lỏng có thể tích từ 10 mililít đến dưới 100 mililít;\n\ni) Có 02 chất ma túy trở lên mà tổng khối lượng hoặc thể tích của các chất đó tương đương với khối lượng hoặc thể tích chất ma túy quy định tại một trong các điểm từ điểm b đến điểm h khoản này.",
+        "[Điều 249 BLHS - Tội tàng trữ trái phép chất ma túy] khoản 2: 2. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 05 năm đến 10 năm:\n\na) Có tổ chức;\n\nb) Phạm tội 02 lần trở lên;\n\nc) Lợi dụng chức vụ, quyền hạn;\n\nd) Lợi dụng danh nghĩa cơ quan, tổ chức;\n\nđ) Sử dụng người dưới 16 tuổi vào việc phạm tội;\n\ne) Nhựa thuốc phiện, nhựa cần sa hoặc cao côca có khối lượng từ 500 gam đến dưới 01 kilôgam;\n\ng) Heroine, Cocaine, Methamphetamine, Amphetamine, MDMA hoặc XLR-11 có khối lượng từ 05 gam đến dưới 30 gam;\n\nh) Lá cây côca; lá khát (lá cây Catha edulis); lá, rễ, thân, cành, hoa, quả của cây cần sa hoặc bộ phận của cây khác có chứa chất ma túy do Chính phủ quy định có khối lượng từ 10 kilôgam đến dưới 25 kilôgam;\n\ni) Quả thuốc phiện khô có khối lượng từ 50 kilôgam đến dưới 200 kilôgam;\n\nk) Quả thuốc phiện tươi có khối lượng từ 10 kilôgam đến dưới 50 kilôgam;\n\nl) Các chất ma túy khác ở thể rắn có khối lượng từ 20 gam đến dưới 100 gam;\n\nm) Các chất ma túy khác ở thể lỏng có thể tích từ 100 mililít đến dưới 250 mililít;\n\nn) Có 02 chất ma túy trở lên mà tổng khối lượng hoặc thể tích của các chất đó tương đương với khối lượng hoặc thể tích chất ma túy quy định tại một trong các điểm từ điểm e đến điểm m khoản này;\n\no) Tái phạm nguy hiểm.",
+        "[Điều 249 BLHS - Tội tàng trữ trái phép chất ma túy] khoản 3: 3. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 10 năm đến 15 năm:\n\na) Nhựa thuốc phiện, nhựa cần sa hoặc cao côca có khối lượng từ 01 kilôgam đến dưới 05 kilôgam;\n\nb) Heroine, Cocaine, Methamphetamine, Amphetamine, MDMA hoặc XLR-11 có khối lượng từ 30 gam đến dưới 100 gam;\n\nc) Lá cây côca; lá khát (lá cây Catha edulis); lá, rễ, thân, cành, hoa, quả của cây cần sa hoặc bộ phận của cây khác có chứa chất ma túy do Chính phủ quy định có khối lượng từ 25 kilôgam đến dưới 75 kilôgam;\n\nd) Quả thuốc phiện khô có khối lượng từ 200 kilôgam đến dưới 600 kilôgam;\n\nđ) Quả thuốc phiện tươi có khối lượng tù 50 kilôgam đến dưới 150 kilôgam;\n\ne) Các chất ma túy khác ở thể rắn có khối lượng từ 100 gam đến dưới 300 gam;\n\ng) Các chất ma túy khác ở thể lỏng có thể tích từ 250 mililít đến dưới 750 mililít;\n\nh) Có 02 chất ma túy trở lên mà tổng khối lượng hoặc thể tích của các chất đó tương đương với khối lượng hoặc thể tích chất ma túy quy định tại một trong các điểm từ điểm a đến điểm g khoản này.",
+        "[Điều 249 BLHS - Tội tàng trữ trái phép chất ma túy] khoản 4: 4. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 15 năm đến 20 năm hoặc tù chung thân:\n\na) Nhựa thuốc phiện, nhựa cần sa hoặc cao côca có khối lượng 05 kilôgam trở lên;\n\nb) Heroine, Cocaine, Methamphetamine, Amphetamine, MDMA hoặc XLR-11 có khối lượng 100 gam trở lên;\n\nc) Lá cây côca; lá khát (lá cây Catha edulis); lá, rễ, thân, cành, hoa, quả của cây cần sa hoặc bộ phận của cây khác có chứa chất ma túy do Chính phủ quy định có khối lượng 75 kilôgam trở lên;\n\nd) Quả thuốc phiện khô có khối lượng 600 kilôgam trở lên;\n\nđ) Quả thuốc phiện tươi có khối lượng 150 kilôgam trở lên;\n\ne) Các chất ma túy khác ở thể rắn có khối lượng 300 gam trở lên;\n\ng) Các chất ma túy khác ở thể lỏng có thể tích 750 mililít trở lên;\n\nh) Có 02 chất ma túy trở lên mà tổng khối lượng hoặc thể tích của các chất đó tương đương với khối lượng hoặc thể tích chất ma túy quy định tại một trong các điểm từ điểm a đến điểm g khoản này.",
+        "[Điều 250 BLHS - Tội vận chuyển trái phép chất ma túy] khoản 1: 1. Người nào vận chuyển trái phép chất ma túy mà không nhằm mục đích sản xuất, mua bán, tàng trữ trái phép chất ma túy thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 02 năm đến 07 năm:\n\na) Đã bị xử phạt vi phạm hành chính về hành vi quy định tại Điều này hoặc đã bị kết án về tội này hoặc một trong các tội quy định tại các điều 248, 249, 251 và 252 của Bộ luật này, chưa được xóa án tích mà còn vi phạm;\n\nb) Nhựa thuốc phiện, nhựa cần sa hoặc cao côca có khối lượng từ 01 gam đến dưới 500 gam;\n\nc) Heroine, Cocaine, Methamphetamine, Amphetamine, MDMA hoặc XLR-11 có khối lượng từ 0,1 gam đến dưới 05 gam;\n\nd) Lá cây côca; lá khát (lá cây Catha edulis); lá, rễ, thân, cành, hoa, quả của cây cần sa hoặc bộ phận của cây khác có chứa chất ma túy do Chính phủ quy định có khối lượng từ 01 kilôgam đến dưới 10 kilôgam;\n\nđ) Quả thuốc phiện khô có khối lượng từ 05 kilôgam đến dưới 50 kilôgam;\n\ne) Quả thuốc phiện tươi có khối lượng từ 01 kilôgam đến dưới 10 kilôgam;\n\ng) Các chất ma túy khác ở thể rắn có khối lượng từ 01 gam đến dưới 20 gam;\n\nh) Các chất ma túy khác ở thể lỏng có thể tích từ 10 mililít đến dưới 100 mililít;\n\ni) Có 02 chất ma túy trở lên mà tổng khối lượng hoặc thể tích của các chất đó tương đương với khối lượng hoặc thể tích chất ma túy quy định tại một trong các điểm từ điểm b đến điểm h khoản này.",
+        "[Điều 250 BLHS - Tội vận chuyển trái phép chất ma túy] khoản 2: 2. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 07 năm đến 15 năm:\n\na) Có tổ chức;\n\nb) Phạm tội 02 lần trở lên;\n\nc) Lợi dụng chức vụ, quyền hạn;\n\nd) Lợi dụng danh nghĩa cơ quan, tổ chức;\n\nđ) Sử dụng người dưới 16 tuổi vào việc phạm tội;\n\ne) Qua biên giới;\n\ng) Nhựa thuốc phiện, nhựa cần sa hoặc cao côca có khối lượng từ 500 gam đến dưới 01 kilôgam;\n\nh) Heroine, Cocaine, Methamphetamine, Amphetamine, MDMA hoặc XLR-11 có khối lượng từ 05 gam đến dưới 30 gam;\n\ni) Lá cây côca; lá khát (lá cây Catha edulis); lá, rễ, thân, cành, hoa, quả của cây cần sa hoặc bộ phận của cây khác có chứa chất ma túy do Chính phủ quy định có khối lượng từ 10 kilôgam đến dưới 25 kilôgam;\n\nk) Quả thuốc phiện khô có khối lượng từ 50 kilôgam đến dưới 200 kilôgam;\n\nl) Quả thuốc phiện tươi có khối lượng từ 10 kilôgam đến dưới 50 kilôgam;\n\nm) Các chất ma túy khác ở thể rắn có khối lượng từ 20 gam đến dưới 100 gam;\n\nn) Các chất ma túy khác ở thể lỏng có thể tích từ 100 mililít đến dưới 250 mililít;\n\no) Có 02 chất ma túy trở lên mà tổng khối lượng hoặc thể tích của các chất đó tương đương với khối lượng hoặc thể tích chất ma túy quy định tại một trong các điểm từ điểm g đến điểm n khoản này;\n\np) Tái phạm nguy hiểm.",
+        "[Điều 250 BLHS - Tội vận chuyển trái phép chất ma túy] khoản 3: 3. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 15 năm đến 20 năm:\n\na) Nhựa thuốc phiện, nhựa cần sa hoặc cao côca có khối lượng từ 01 kilôgam đến dưới 05 kilôgam;\n\nb) Heroine, Cocaine, Methamphetamine, Amphetamine, MDMA hoặc XLR-11 có khối lượng từ 30 gam đến dưới 100 gam;\n\nc) Lá cây côca; lá khát (lá cây Catha edulis); lá, rễ, thân, cành, hoa, quả của cây cần sa hoặc bộ phận của cây khác có chứa chất ma túy do Chính phủ quy định có khối lượng từ 25 kilôgam đến dưới 75 kilôgam;\n\nd) Quả thuốc phiện khô có khối lượng từ 200 kilôgam đến dưới 600 kilôgam;\n\nđ) Quả thuốc phiện tươi có khối lượng từ 50 kilôgam đến dưới 150 kilôgam;\n\ne) Các chất ma túy khác ở thể rắn có khối lượng từ 100 gam đến dưới 300 gam;\n\ng) Các chất ma túy khác ở thể lỏng có thể tích từ 250 mililít đến dưới 750 mililít;\n\nh) Có 02 chất ma túy trở lên mà tổng khối lượng hoặc thể tích của các chất đó tương đương với khối lượng hoặc thể tích chất ma túy quy định tại một trong các điểm từ điểm a đến điểm g khoản này.",
+        "[Điều 250 BLHS - Tội vận chuyển trái phép chất ma túy] khoản 4: 4. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù 20 năm, tù chung thân hoặc tử hình:\n\na) Nhựa thuốc phiện, nhựa cần sa hoặc cao côca có khối lượng 05 kilôgam trở lên;\n\nb) Heroine, Cocaine, Methamphetamine, Amphetamine, MDMA hoặc XLR-11 có khối lượng 100 gam trở lên;\n\nc) Lá cây côca; lá khát (lá cây Catha edulis); lá, rễ, thân, cành, hoa, quả của cây cần sa hoặc bộ phận của cây khác có chứa chất ma túy do Chính phủ quy định có khối lượng 75 kilôgam trở lên;\n\nd) Quả thuốc phiện khô có khối lượng 600 kilôgam trở lên;\n\nđ) Quả thuốc phiện tươi có khối lượng 150 kilôgam trở lên;\n\ne) Các chất ma túy khác ở thể rắn có khối lượng 300 gam trở lên;\n\ng) Các chất ma túy khác ở thể lỏng có thể tích 750 mililít trở lên;\n\nh) Có 02 chất ma túy trở lên mà tổng khối lượng hoặc thể tích của các chất đó tương đương với khối lượng hoặc thể tích chất ma túy quy định tại một trong các điểm từ điểm a đến điểm g khoản này.",
+        "[Điều 251 BLHS - Tội mua bán trái phép chất ma túy] khoản 1: 1. Người nào mua bán trái phép chất ma túy, thì bị phạt tù từ 02 năm đến 07 năm.",
+        "[Điều 251 BLHS - Tội mua bán trái phép chất ma túy] khoản 2: 2. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 07 năm đến 15 năm:\n\na) Có tổ chức;\n\nb) Phạm tội 02 lần trở lên;\n\nc) Đối với 02 người trở lên;\n\nd) Lợi dụng chức vụ, quyền hạn;\n\nđ) Lợi dụng danh nghĩa cơ quan, tổ chức;\n\ne) Sử dụng người dưới 16 tuổi vào việc phạm tội hoặc bán ma túy cho người dưới 16 tuổi;\n\ng) Qua biên giới;\n\nh) Nhựa thuốc phiện, nhựa cần sa hoặc cao côca có khối lượng từ 500 gam đến dưới 01 kilôgam;\n\ni) Heroine, Cocaine, Methamphetamine, Amphetamine, MDMA hoặc XLR-11 có khối lượng từ 05 gam đến dưới 30 gam;\n\nk) Lá cây côca; lá khát (lá cây Catha edulis); lá, rễ, thân, cành, hoa, quả của cây cần sa hoặc bộ phận của cây khác có chứa chất ma túy do Chính phủ quy định có khối lượng từ 10 kilôgam đến dưới 25 kilôgam;\n\nl) Quả thuốc phiện khô có khối lượng từ 50 kilôgam đến dưới 200 kilôgam;\n\nm) Quả thuốc phiện tươi có khối lượng từ 10 kilôgam đến dưới 50 kilôgam;\n\nn) Các chất ma túy khác ở thể rắn có khối lượng từ 20 gam đến dưới 100 gam;\n\no) Các chất ma túy khác ở thể lỏng có thể tích từ 100 mililít đến dưới 250 mililít;\n\np) Có 02 chất ma túy trở lên mà tổng khối lượng hoặc thể tích của các chất đó tương đương với khối lượng hoặc thể tích chất ma túy quy định tại một trong các điểm từ điểm h đến điểm o khoản này;\n\nq) Tái phạm nguy hiểm.",
+        "[Điều 251 BLHS - Tội mua bán trái phép chất ma túy] khoản 3: 3. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù từ 15 năm đến 20 năm:\n\na) Nhựa thuốc phiện, nhựa cần sa hoặc cao côca có khối lượng từ 01 kilôgam đến dưới 05 kilôgam;\n\nb) Heroine, Cocaine, Methamphetamine, Amphetamine, MDMA hoặc XLR-11 có khối lượng từ 30 gam đến dưới 100 gam;\n\nc) Lá cây côca; lá khát (lá cây Catha edulis); lá, rễ, thân, cành, hoa, quả của cây cần sa hoặc bộ phận của cây khác có chứa chất ma túy do Chính phủ quy định có khối lượng từ 25 kilôgam đến dưới 75 kilôgam;\n\nd) Quả thuốc phiện khô có khối lượng từ 200 kilôgam đến dưới 600 kilôgam;\n\nđ) Quả thuốc phiện tươi có khối lượng từ 50 kilôgam đến dưới 150 kilôgam;\n\ne) Các chất ma túy khác ở thể rắn có khối lượng từ 100 gam đến dưới 300 gam;\n\ng) Các chất ma túy khác ở thể lỏng có thể tích từ 250 mililít đến dưới 750 mililít;\n\nh) Có 02 chất ma túy trở lên mà tổng khối lượng hoặc thể tích của các chất đó tương đương với khối lượng hoặc thể tích chất ma túy quy định tại một trong các điểm từ điểm a đến điểm g khoản này.",
+        "[Điều 251 BLHS - Tội mua bán trái phép chất ma túy] khoản 4: 4. Phạm tội thuộc một trong các trường hợp sau đây, thì bị phạt tù 20 năm, tù chung thân hoặc tử hình:\n\na) Nhựa thuốc phiện, nhựa cần sa hoặc cao côca có khối lượng 05 kilôgam trở lên;\n\nb) Heroine, Cocaine, Methamphetamine, Amphetamine, MDMA hoặc XLR-11 có khối lượng 100 gam trở lên;\n\nc) Lá cây côca; lá khát (lá cây Catha edulis); lá, rễ, thân, cành, hoa, quả của cây cần sa hoặc bộ phận của cây khác có chứa chất ma túy do Chính phủ quy định có khối lượng 75 kilôgam trở lên;\n\nd) Quả thuốc phiện khô có khối lượng 600 kilôgam trở lên;\n\nđ) Quả thuốc phiện tươi có khối lượng 150 kilôgam trở lên;\n\ne) Các chất ma túy khác ở thể rắn có khối lượng 300 gam trở lên;\n\ng) Các chất ma túy khác ở thể lỏng có thể tích 750 mililít trở lên;\n\nh) Có 02 chất ma túy trở lên mà tổng khối lượng hoặc thể tích của các chất đó tương đương với khối lượng hoặc thể tích chất ma túy quy định tại một trong các điểm từ điểm a đến điểm g khoản này.",
+        "[Điều 255 BLHS - Tội tổ chức sử dụng trái phép chất ma túy] khoản 1: 1. Người nào tổ chức sử dụng trái phép chất ma túy dưới bất kỳ hình thức nào, thì bị phạt tù từ 02 năm đến 07 năm.",
+        "(Case: Vụ vận chuyển hơn 10kg ma túy từ Đức về Việt Nam qua sân bay Nội Bài) -[CHARGED_WITH]-> (Crime: vận chuyển trái phép chất ma túy)",
+        "(Case: Vụ vận chuyển hơn 10kg ma túy từ Đức về Việt Nam qua sân bay Nội Bài) -[INVOLVES {amount: hơn 9,6kg}]-> (Substance: MDMA)",
+        "(Person: Nguyễn Hữu Đức) -[INVOLVED_IN {role: người liên quan}]-> (Case: Vụ vận chuyển hơn 10kg ma túy từ Đức về Việt Nam qua sân bay Nội Bài)",
+        "(Person: Cái Quang Huy) -[INVOLVED_IN {charge: vận chuyển trái phép chất ma túy, role: bị cáo}]-> (Case: Vụ vận chuyển hơn 10kg ma túy từ Đức về Việt Nam qua sân bay Nội Bài)",
+        "(Case: Vụ vận chuyển hơn 10kg ma túy từ Đức về Việt Nam qua sân bay Nội Bài) -[LOCATED_IN]-> (Location: Hà Nội)",
+        "(Person: Nguyễn Tiến Đạt) -[INVOLVED_IN {charge: vận chuyển trái phép chất ma túy, role: bị cáo}]-> (Case: Vụ vận chuyển hơn 10kg ma túy từ Đức về Việt Nam qua sân bay Nội Bài)",
+        "(Case: Vụ vận chuyển hơn 10kg ma túy từ Đức về Việt Nam qua sân bay Nội Bài) -[INVOLVES {amount: gần 406g}]-> (Substance: Ketamine)",
+        "(Person: Cái Quang Huy) -[INVOLVED_IN {charge: vận chuyển trái phép chất ma túy, role: bị cáo}]-> (Case: Vụ vận chuyển ma túy qua sân bay Nội Bài do Cái Quang Huy thực hiện)",
+        "(Case: Vụ tổ chức sử dụng trái phép chất ma túy và tàng trữ ma túy tại Sầm Sơn và Viện Pháp y tâm thần Trung ương) -[INVOLVES {amount: 0,686g}]-> (Substance: MDMA)",
+        "(Case: Vụ án sai phạm và sử dụng trái phép chất ma túy tại Viện Pháp y tâm thần Trung ương) -[INVOLVES]-> (Substance: MDMA)",
+        "(Case: Vụ vận chuyển ma túy qua sân bay Nội Bài do Cái Quang Huy thực hiện) -[INVOLVES {amount: hơn 9,6kg}]-> (Substance: MDMA)",
+        "(Case: Vụ mua bán trái phép chất ma túy do Lê Minh Thành và đồng phạm thực hiện) -[INVOLVES {amount: 5 viên}]-> (Substance: MDMA)",
+        "(Clause: Điều 252 BLHS khoản 3) -[MENTIONS]-> (Substance: MDMA)",
+        "(Clause: Điều 252 BLHS khoản 1) -[MENTIONS]-> (Substance: MDMA)",
+        "(Clause: Điều 252 BLHS khoản 2) -[MENTIONS]-> (Substance: MDMA)",
+        "(Clause: Điều 252 BLHS khoản 4) -[MENTIONS]-> (Substance: MDMA)",
+        "(Clause: Điều 251 BLHS khoản 2) -[MENTIONS]-> (Substance: MDMA)",
+        "(Clause: Điều 251 BLHS khoản 3) -[MENTIONS]-> (Substance: MDMA)",
+        "(Clause: Điều 251 BLHS khoản 4) -[MENTIONS]-> (Substance: MDMA)"
+      ]
+    }
+  },
+  "queries": {
+    "labels": {
+      "cypher": "MATCH (n) RETURN labels(n)[0] AS label, count(*) AS n ORDER BY label",
+      "rows": [
+        {
+          "label": "Article",
+          "n": 18
+        },
+        {
+          "label": "Case",
+          "n": 12
+        },
+        {
+          "label": "Clause",
+          "n": 99
+        },
+        {
+          "label": "Crime",
+          "n": 13
+        },
+        {
+          "label": "Location",
+          "n": 5
+        },
+        {
+          "label": "Person",
+          "n": 39
+        },
+        {
+          "label": "Substance",
+          "n": 11
+        }
+      ]
+    },
+    "relationships": {
+      "cypher": "MATCH ()-[r]->() RETURN type(r) AS rel, count(*) AS n ORDER BY rel",
+      "rows": [
+        {
+          "rel": "CHARGED_WITH",
+          "n": 16
+        },
+        {
+          "rel": "DEFINES",
+          "n": 13
+        },
+        {
+          "rel": "HAS_CLAUSE",
+          "n": 99
+        },
+        {
+          "rel": "INVOLVED_IN",
+          "n": 47
+        },
+        {
+          "rel": "INVOLVES",
+          "n": 19
+        },
+        {
+          "rel": "LOCATED_IN",
+          "n": 11
+        },
+        {
+          "rel": "MENTIONS",
+          "n": 169
+        }
+      ]
+    },
+    "mdma_cases": {
+      "cypher": "MATCH (k:Case)-[:INVOLVES]->(:Substance {name:'MDMA'}) RETURN k.name AS name, k.doc_id AS doc_id ORDER BY doc_id",
+      "rows": [
+        {
+          "name": "Vụ vận chuyển hơn 10kg ma túy từ Đức về Việt Nam qua sân bay Nội Bài",
+          "doc_id": "news-100260917203001265"
+        },
+        {
+          "name": "Vụ vận chuyển ma túy qua sân bay Nội Bài do Cái Quang Huy thực hiện",
+          "doc_id": "news-100260918080821054"
+        },
+        {
+          "name": "Vụ mua bán trái phép chất ma túy do Lê Minh Thành và đồng phạm thực hiện",
+          "doc_id": "news-100260918080821054"
+        },
+        {
+          "name": "Vụ án sai phạm và sử dụng trái phép chất ma túy tại Viện Pháp y tâm thần Trung ương",
+          "doc_id": "news-100260924105118645"
+        },
+        {
+          "name": "Vụ tổ chức sử dụng trái phép chất ma túy và tàng trữ ma túy tại Sầm Sơn và Viện Pháp y tâm thần Trung ương",
+          "doc_id": "news-100260930085028036"
+        }
+      ]
+    }
+  }
+}
